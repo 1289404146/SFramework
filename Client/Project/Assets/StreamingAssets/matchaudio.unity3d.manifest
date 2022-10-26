@@ -1,0 +1,20 @@
+ManifestFileVersion: 0
+CRC: 3480378406
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 58cf7229ad573782e1ea12b6f12acea4
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 9a2ca7bdbd1871f7131daf57de908e0c
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Resources/Source/Grassland-1.wav
+- Assets/Resources/Source/Countdown.wav
+- Assets/Resources/Source/chongci2.mp3
+- Assets/Resources/Source/chuwan2.mp3
+Dependencies: []

@@ -1,0 +1,46 @@
+ManifestFileVersion: 0
+CRC: 2183903946
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: matchaudio.unity3d
+      Dependencies: {}
+    Info_1:
+      Name: player.unity3d
+      Dependencies: {}
+    Info_2:
+      Name: chinese.unity3d
+      Dependencies: {}
+    Info_3:
+      Name: english.unity3d
+      Dependencies: {}
+    Info_4:
+      Name: language.unity3d
+      Dependencies: {}
+    Info_5:
+      Name: sphere.unity3d
+      Dependencies: {}
+    Info_6:
+      Name: cube.unity3d
+      Dependencies: {}
+    Info_7:
+      Name: cylinder.unity3d
+      Dependencies: {}
+    Info_8:
+      Name: chongci2.unity3d
+      Dependencies: {}
+    Info_9:
+      Name: chuwan2.unity3d
+      Dependencies: {}
+    Info_10:
+      Name: countdown.unity3d
+      Dependencies: {}
+    Info_11:
+      Name: grassland-1.unity3d
+      Dependencies: {}
+    Info_12:
+      Name: grassland-2.unity3d
+      Dependencies: {}
+    Info_13:
+      Name: panmain.unity3d
+      Dependencies: {}

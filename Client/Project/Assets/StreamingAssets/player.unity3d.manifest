@@ -1,0 +1,17 @@
+ManifestFileVersion: 0
+CRC: 2746012924
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: ecdad563b207c4426fc4717e35bf2e6d
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 5ad585dd02dfb5016c0dad519eab8f49
+HashAppended: 0
+ClassTypes:
+- Class: 49
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Bundles/Config/Player.txt
+Dependencies: []

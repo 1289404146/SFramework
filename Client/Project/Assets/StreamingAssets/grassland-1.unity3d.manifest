@@ -1,0 +1,17 @@
+ManifestFileVersion: 0
+CRC: 3039183797
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 1dca41a626a9034c6a27ffd7aa090a1d
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 9a2ca7bdbd1871f7131daf57de908e0c
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Bundles/Source/Grassland-1.wav
+Dependencies: []

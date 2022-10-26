@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "name": "equip1",
+    "attr": 10,
+    "value": 1.2
+  },
+  {
+    "id": 2,
+    "name": "equip1",
+    "attr": 10,
+    "value": 1.2
+  }
+]

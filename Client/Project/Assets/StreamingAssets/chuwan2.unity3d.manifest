@@ -1,0 +1,17 @@
+ManifestFileVersion: 0
+CRC: 3100086342
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 4d8e30118256f6df3d954f374cfa8611
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 9a2ca7bdbd1871f7131daf57de908e0c
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Bundles/Source/chuwan2.mp3
+Dependencies: []
