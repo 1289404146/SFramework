@@ -1,5 +1,5 @@
 ManifestFileVersion: 0
-CRC: 2183903946
+CRC: 2180161040
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
@@ -43,4 +43,7 @@ AssetBundleManifest:
       Dependencies: {}
     Info_13:
       Name: panmain.unity3d
+      Dependencies: {}
+    Info_14:
+      Name: uimain.unity3d
       Dependencies: {}
