@@ -71,7 +71,7 @@ public  class Main : MonoBehaviour
     {
         AddDefaultManager();
         Initilize();
-        UIManager.PushPanel(UIType.UIMain);
+        UIManager.PushPanel(UIType.UILogin);
         GameManager.SwitchGameState(GameState.Init);
         GameManager.SwitchGameState(GameState.start);
         GameManager.SwitchGameState(GameState.gameing);

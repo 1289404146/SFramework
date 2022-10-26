@@ -102,13 +102,13 @@ public class NetworkManager : BaseMono,IManager
 
     public void Close()
     {
-        if (socket != null)
-        {
-            socket.Shutdown(SocketShutdown.Both);
-            socket.Close();
+        //if (socket != null)
+        //{
+        //    socket.Shutdown(SocketShutdown.Both);
+        //    socket.Close();
 
-            isConnected = false;
-        }
+        //    isConnected = false;
+        //}
     }
     private void OnDestroy()
     {

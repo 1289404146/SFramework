@@ -31,7 +31,7 @@ public class ABHelper
         AssetDatabase.Refresh();
     }
 
-    [MenuItem("GameObject/UI/CopyPath", false, 0)]
+    [MenuItem("GameObject/CopyPath", false, 0)]
     public static void CopyAllNamePath()
     {
        UnityEngine.Object[] objects = Selection.objects;
