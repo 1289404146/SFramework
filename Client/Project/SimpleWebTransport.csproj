@@ -9,10 +9,10 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{5B9FF267-005F-A3BF-219E-FEAE2D8C894F}</ProjectGuid>
+    <ProjectGuid>{54D40601-226C-D5D9-4B93-EEA808C8D81C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <AssemblyName>SimpleWebTransport</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <BaseDirectory>.</BaseDirectory>
@@ -26,7 +26,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
-    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -35,7 +35,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
-    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup>
     <NoConfig>true</NoConfig>
@@ -53,138 +53,35 @@
     <UnityVersion>2020.3.25f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\SimpleFramework\Tools\TimerTools.cs" />
-    <Compile Include="Assets\Gen\demo\TbEquip.cs" />
-    <Compile Include="Assets\SimpleFramework\Core\Module\LocalizationManager.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
-    <Compile Include="Assets\SimpleFramework\Core\Module\Base\IManager.cs" />
-    <Compile Include="Assets\SimpleFramework\Core\Module\FSM\FSMState.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs" />
-    <Compile Include="Assets\SimpleFramework\Core\Main.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SimpleScript.cs" />
-    <Compile Include="Assets\SimpleFramework\Core\Module\FSM\FSMSystem.cs" />
-    <Compile Include="Assets\Gen\item\ItemExchange.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_DigitValidator.cs" />
-    <Compile Include="Assets\SimpleFramework\Tools\WaitTimeScript.cs" />
-    <Compile Include="Assets\SimpleFramework\Core\UILayer.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
-    <Compile Include="Assets\SimpleFramework\Demo\GameLogic\UI\UIView\UIGameMainView.cs" />
-    <Compile Include="Assets\SimpleFramework\Tools\ByteHelper.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshSpawner.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
-    <Compile Include="Assets\SimpleFramework\Core\Module\EventManager.cs" />
-    <Compile Include="Assets\Gen\item\Item.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
-    <Compile Include="Assets\SimpleFramework\Demo\GameLogic\UI\UILogic\UIMainLogic.cs" />
-    <Compile Include="Assets\Gen\item\EQuality.cs" />
-    <Compile Include="Assets\SimpleFramework\Core\Module\Audio\AudioManager.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
-    <Compile Include="Assets\SimpleFramework\Core\Module\FSM\Enemy.cs" />
-    <Compile Include="Assets\SimpleFramework\Demo\GameLogic\UI\UILogic\UIGameMainLogic.cs" />
-    <Compile Include="Assets\SimpleFramework\Core\Module\FSM\ChaseState.cs" />
-    <Compile Include="Assets\Gen\item\TbItem.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs" />
-    <Compile Include="Assets\SimpleFramework\Core\Module\GameManager.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark04.cs" />
-    <Compile Include="Assets\SimpleFramework\Scripts\TableManager.cs" />
-    <Compile Include="Assets\SimpleFramework\Demo\GameLogic\UI\UIView\UILoginView.cs" />
-    <Compile Include="Assets\SimpleFramework\Demo\GameLogic\UI\UILogic\UILoginLogic.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
-    <Compile Include="Assets\SimpleFramework\Core\Module\AB\AssetBundleManager.cs" />
-    <Compile Include="Assets\SimpleFramework\Core\UIType.cs" />
-    <Compile Include="Assets\SimpleFramework\Core\Module\FSM\PatrolState.cs" />
-    <Compile Include="Assets\SimpleFramework\Tools\UtilsTool.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ChatController.cs" />
-    <Compile Include="Assets\SimpleFramework\Tools\MD5Helper.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshProFloatingText.cs" />
-    <Compile Include="Assets\SimpleFramework\Core\Module\ResourcesManager.cs" />
-    <Compile Include="Assets\SimpleFramework\Tools\FileHelper.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
-    <Compile Include="Assets\SimpleFramework\Core\Module\ObjectPoolManager.cs" />
-    <Compile Include="Assets\SimpleFramework\Core\Module\FSM\AttackState.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
-    <Compile Include="Assets\SimpleFramework\Core\Module\ConfigManager.cs" />
-    <Compile Include="Assets\Gen\test\AccessFlag.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\EnvMapAnimator.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_UiFrameRateCounter.cs" />
-    <Compile Include="Assets\Gen\Tables.cs" />
-    <Compile Include="Assets\SimpleFramework\Core\Module\Base\BaseMono.cs" />
-    <Compile Include="Assets\SimpleFramework\Core\Module\UIManager.cs" />
-    <Compile Include="Assets\Gen\demo\Equip.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
-    <Compile Include="Assets\SimpleFramework\Core\Module\GameDataManager.cs" />
-    <Compile Include="Assets\SimpleFramework\Core\Singleton\Singleton.cs" />
-    <Compile Include="Assets\SimpleFramework\Core\Base\UIBaseLogic.cs" />
-    <Compile Include="Assets\SimpleFramework\Core\Module\NetworkManager.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\DropdownSample.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_PhoneNumberValidator.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMPro_InstructionOverlay.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexColorCycler.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TeleType.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_ExampleScript_01.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextConsoleSimulator.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ObjectSpin.cs" />
-    <Compile Include="Assets\SimpleFramework\Core\Singleton\MonoSingleton.cs" />
-    <Compile Include="Assets\SimpleFramework\Demo\GameLogic\UI\UIView\UIMainView.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
-    <Compile Include="Assets\SimpleFramework\Core\Module\SceneManager.cs" />
-    <Compile Include="Assets\SimpleFramework\Core\Base\UIBaseView.cs" />
-    <Compile Include="Assets\Gen\demo\TbLanguage.cs" />
-    <Compile Include="Assets\Gen\demo\Language.cs" />
+    <Compile Include="Assets\Mirror\Runtime\Transports\SimpleWebTransport\Common\Utils.cs" />
+    <Compile Include="Assets\Mirror\Runtime\Transports\SimpleWebTransport\Client\StandAlone\ClientSslHelper.cs" />
+    <Compile Include="Assets\Mirror\Runtime\Transports\SimpleWebTransport\Common\Message.cs" />
+    <Compile Include="Assets\Mirror\Runtime\Transports\SimpleWebTransport\Client\Webgl\SimpleWebJSLib.cs" />
+    <Compile Include="Assets\Mirror\Runtime\Transports\SimpleWebTransport\Common\BufferPool.cs" />
+    <Compile Include="Assets\Mirror\Runtime\Transports\SimpleWebTransport\SimpleWebTransport.cs" />
+    <Compile Include="Assets\Mirror\Runtime\Transports\SimpleWebTransport\Common\Connection.cs" />
+    <Compile Include="Assets\Mirror\Runtime\Transports\SimpleWebTransport\Client\StandAlone\WebSocketClientStandAlone.cs" />
+    <Compile Include="Assets\Mirror\Runtime\Transports\SimpleWebTransport\Server\WebSocketServer.cs" />
+    <Compile Include="Assets\Mirror\Runtime\Transports\SimpleWebTransport\Client\Webgl\WebSocketClientWebGl.cs" />
+    <Compile Include="Assets\Mirror\Runtime\Transports\SimpleWebTransport\Common\MessageProcessor.cs" />
+    <Compile Include="Assets\Mirror\Runtime\Transports\SimpleWebTransport\Common\ReceiveLoop.cs" />
+    <Compile Include="Assets\Mirror\Runtime\Transports\SimpleWebTransport\SslConfigLoader.cs" />
+    <Compile Include="Assets\Mirror\Runtime\Transports\SimpleWebTransport\Common\SendLoop.cs" />
+    <Compile Include="Assets\Mirror\Runtime\Transports\SimpleWebTransport\Client\StandAlone\ClientHandshake.cs" />
+    <Compile Include="Assets\Mirror\Runtime\Transports\SimpleWebTransport\Common\Constants.cs" />
+    <Compile Include="Assets\Mirror\Runtime\Transports\SimpleWebTransport\Common\ReadHelper.cs" />
+    <Compile Include="Assets\Mirror\Runtime\Transports\SimpleWebTransport\Server\SimpleWebServer.cs" />
+    <Compile Include="Assets\Mirror\Runtime\Transports\SimpleWebTransport\Common\EventType.cs" />
+    <Compile Include="Assets\Mirror\Runtime\Transports\SimpleWebTransport\Common\Log.cs" />
+    <Compile Include="Assets\Mirror\Runtime\Transports\SimpleWebTransport\Server\ServerHandshake.cs" />
+    <Compile Include="Assets\Mirror\Runtime\Transports\SimpleWebTransport\Client\SimpleWebClient.cs" />
+    <Compile Include="Assets\Mirror\Runtime\Transports\SimpleWebTransport\Common\TcpConfig.cs" />
+    <Compile Include="Assets\Mirror\Runtime\Transports\SimpleWebTransport\AssemblyInfo.cs" />
+    <Compile Include="Assets\Mirror\Runtime\Transports\SimpleWebTransport\Server\ServerSslHelper.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\Mirror\Plugins\Mono.Cecil\Mono.CecilX.dll" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
-    <None Include="Assets\Mirror\Plugins\Mono.Cecil\Mono.CecilX.Mdb.dll" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
-    <None Include="Assets\ScriptTemplates\51-Mirror__Network Authenticator-NewNetworkAuthenticator.cs.txt" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
-    <None Include="Assets\Resources\Config\Player.txt" />
-    <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Oswald-Bold - OFL.txt" />
-    <None Include="Assets\Mirror\Plugins\Mono.Cecil\Mono.CecilX.Pdb.dll" />
-    <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Anton OFL.txt" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
-    <None Include="Assets\ScriptTemplates\56-Mirror__Network Discovery-NewNetworkDiscovery.cs.txt" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
-    <None Include="Assets\Mirror\Plugins\Mono.Cecil\Mono.CecilX.Rocks.dll" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
-    <None Include="Assets\Mirror\Readme.txt" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
-    <None Include="Assets\ScriptTemplates\57-Mirror__Network Transform-NewNetworkTransform.cs.txt" />
-    <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
-    <None Include="Assets\Bundles\Config\Player.txt" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
-    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
-    <None Include="Assets\ScriptTemplates\52-Mirror__Network Behaviour-NewNetworkBehaviour.cs.txt" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
-    <None Include="Assets\Resources\Language\Chinese.txt" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
-    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
-    <None Include="Assets\Bundles\Language\Language.txt" />
-    <None Include="Assets\Mirror\Plugins\Mono.Cecil\License.txt" />
-    <None Include="Assets\Resources\Language\Language.txt" />
-    <None Include="Assets\ScriptTemplates\55-Mirror__Network Room Player-NewNetworkRoomPlayer.cs.txt" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
-    <None Include="Assets\ScriptTemplates\53-Mirror__Custom Interest Management-CustomInterestManagement.cs.txt" />
-    <None Include="Assets\Bundles\Language\English.txt" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
-    <None Include="Assets\ScriptTemplates\50-Mirror__Network Manager-NewNetworkManager.cs.txt" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
-    <None Include="Assets\ScriptTemplates\54-Mirror__Network Room Manager-NewNetworkRoomManager.cs.txt" />
-    <None Include="Assets\Bundles\Language\Chinese.txt" />
-    <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
-    <None Include="Assets\Resources\Language\English.txt" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
-    <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Bangers - OFL.txt" />
+    <None Include="Assets\Mirror\Runtime\Transports\SimpleWebTransport\SimpleWebTransport.asmdef" />
+    <None Include="Assets\Mirror\Runtime\Transports\SimpleWebTransport\README.txt" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -409,20 +306,41 @@
     <Reference Include="UnityEditor.UnityConnectModule">
       <HintPath>D:\Unity 2020.3.25f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
     </Reference>
-    <Reference Include="Mono.CecilX.Rocks">
-      <HintPath>Assets\Mirror\Plugins\Mono.Cecil\Mono.CecilX.Rocks.dll</HintPath>
+    <Reference Include="UnityEditor.Graphs">
+      <HintPath>D:\Unity 2020.3.25f1\Editor\Data\Managed\UnityEditor.Graphs.dll</HintPath>
     </Reference>
-    <Reference Include="Mono.CecilX.Pdb">
-      <HintPath>Assets\Mirror\Plugins\Mono.Cecil\Mono.CecilX.Pdb.dll</HintPath>
+    <Reference Include="UnityEditor.WindowsStandalone.Extensions">
+      <HintPath>D:\Unity 2020.3.25f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
     </Reference>
-    <Reference Include="Mono.CecilX">
-      <HintPath>Assets\Mirror\Plugins\Mono.Cecil\Mono.CecilX.dll</HintPath>
+    <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
+      <HintPath>C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Editor\SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Plastic.Newtonsoft.Json">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.4\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Plastic.Antlr3.Runtime">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.4\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="unityplastic">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.4\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
+    </Reference>
+    <Reference Include="log4netPlastic">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.4\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0\Runtime\Newtonsoft.Json.dll</HintPath>
     </Reference>
+    <Reference Include="Mono.CecilX">
+      <HintPath>Assets\Mirror\Plugins\Mono.Cecil\Mono.CecilX.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.CecilX.Rocks">
+      <HintPath>Assets\Mirror\Plugins\Mono.Cecil\Mono.CecilX.Rocks.dll</HintPath>
+    </Reference>
     <Reference Include="Mono.CecilX.Mdb">
       <HintPath>Assets\Mirror\Plugins\Mono.Cecil\Mono.CecilX.Mdb.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.CecilX.Pdb">
+      <HintPath>Assets\Mirror\Plugins\Mono.Cecil\Mono.CecilX.Pdb.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>D:\Unity 2020.3.25f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\mscorlib.dll</HintPath>
@@ -772,81 +690,17 @@
     <Reference Include="System.Xml.XPath.XDocument">
       <HintPath>D:\Unity 2020.3.25f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Xml.XPath.XDocument.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.VSCode.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualStudio.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Timeline.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Timeline">
-      <HintPath>Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TextMeshPro">
-      <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.PlasticSCM.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Rider.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{EB8AA23C-2655-E22B-2EBB-05697394EDB3}</Project>
-      <Name>Assembly-CSharp-firstpass</Name>
-    </ProjectReference>
     <ProjectReference Include="Mirror.csproj">
       <Project>{DDC0017A-847F-A1AC-E08A-0750F2BF0844}</Project>
       <Name>Mirror</Name>
-    </ProjectReference>
-    <ProjectReference Include="kcp2k.csproj">
-      <Project>{DB845429-F5C7-D625-09EA-DF9113FFE454}</Project>
-      <Name>kcp2k</Name>
-    </ProjectReference>
-    <ProjectReference Include="Mirror.Editor.csproj">
-      <Project>{C22BD3AE-AEB7-6647-919E-C6F26B7D8A7A}</Project>
-      <Name>Mirror.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Mirror.Examples.csproj">
-      <Project>{2E8A20E9-92BC-E382-B98E-E17A1BC930B3}</Project>
-      <Name>Mirror.Examples</Name>
-    </ProjectReference>
-    <ProjectReference Include="Mirror.CompilerSymbols.csproj">
-      <Project>{413A8013-2B41-799B-CD52-7811635115FA}</Project>
-      <Name>Mirror.CompilerSymbols</Name>
-    </ProjectReference>
-    <ProjectReference Include="Mirror.Authenticators.csproj">
-      <Project>{F8C9D306-9E1E-A4FA-AB72-42377DD95A76}</Project>
-      <Name>Mirror.Authenticators</Name>
-    </ProjectReference>
-    <ProjectReference Include="Telepathy.csproj">
-      <Project>{0067700D-9756-5D0C-9DAF-03652EAE61CC}</Project>
-      <Name>Telepathy</Name>
-    </ProjectReference>
-    <ProjectReference Include="where-allocations.csproj">
-      <Project>{B89A3D6D-03D9-68D6-2CE2-6FC15983C0DF}</Project>
-      <Name>where-allocations</Name>
-    </ProjectReference>
-    <ProjectReference Include="SimpleWebTransport.csproj">
-      <Project>{54D40601-226C-D5D9-4B93-EEA808C8D81C}</Project>
-      <Name>SimpleWebTransport</Name>
-    </ProjectReference>
-    <ProjectReference Include="Mirror.Components.csproj">
-      <Project>{5300024F-62B2-E59E-6076-0302A4F92937}</Project>
-      <Name>Mirror.Components</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

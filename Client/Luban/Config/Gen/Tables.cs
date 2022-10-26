@@ -16,6 +16,7 @@ public sealed partial class Tables
 {
     public item.TbItem TbItem {get; }
     public demo.TbEquip TbEquip {get; }
+    public demo.TbLanguage TbLanguage {get; }
 
     public Tables(System.Func<string, JSONNode> loader)
     {
@@ -24,10 +25,13 @@ public sealed partial class Tables
         tables.Add("item.TbItem", TbItem);
         TbEquip = new demo.TbEquip(loader("demo_tbequip")); 
         tables.Add("demo.TbEquip", TbEquip);
+        TbLanguage = new demo.TbLanguage(loader("demo_tblanguage")); 
+        tables.Add("demo.TbLanguage", TbLanguage);
         PostInit();
 
         TbItem.Resolve(tables); 
         TbEquip.Resolve(tables); 
+        TbLanguage.Resolve(tables); 
         PostResolve();
     }
 
@@ -35,6 +39,7 @@ public sealed partial class Tables
     {
         TbItem.TranslateText(translator); 
         TbEquip.TranslateText(translator); 
+        TbLanguage.TranslateText(translator); 
     }
     
     partial void PostInit();
