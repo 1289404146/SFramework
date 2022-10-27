@@ -15,6 +15,8 @@ class Empty : BaseMono, IScene
     public void Initilize()
     {
         Debug.Log("Empty_____Initilize");
-        Main.UIManager.PushPanel(UIType.UIMain);
+        //Main.UIManager.PushPanel(UIType.UIMain);
+        Main.FUIManager.OpenFUI(UIType.UILogin);
+        
     }
 }

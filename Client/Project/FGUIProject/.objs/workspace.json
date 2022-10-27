@@ -11,14 +11,11 @@
     "2w4fpdl4",
     "/",
     "1n4czled",
-    "/",
-    "1n4czled",
-    "/Component/",
-    "1n4czled",
-    "/Resource/"
+    "/"
   ],
   "doc.openedDocs": [
-    "ui://1n4czledsfv94"
+    "ui://1n4czledsfv94",
+    "ui://1n4czledxzq96"
   ],
   "snapToGrid": true,
   "gridColor": 80,

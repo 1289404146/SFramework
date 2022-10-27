@@ -44,7 +44,7 @@ public class AssetBundleManager : MonoBehaviour
 	}
 
 	// 确保了每个包都只加载了一次
-	public void LoadAB(string abName)
+	public AssetBundle LoadAB(string abName)
 	{
 		// 加载AB主包和其中的关键配置文件
 		if (mainAB == null)
@@ -76,6 +76,7 @@ public class AssetBundleManager : MonoBehaviour
 			ab = AssetBundle.LoadFromFile(PathUrl + abName);
 			abDic.Add(abName,ab);
 		}
+		return ab;
 	}
 
 

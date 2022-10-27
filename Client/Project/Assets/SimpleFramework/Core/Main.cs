@@ -61,6 +61,17 @@ public  class Main : MonoBehaviour
         set;
         get;
     }
+    public static FUIPackageManager FUIPackageManager
+    {
+        set;
+        get;
+    }
+    public static FUIManager FUIManager
+    {
+        set;
+        get;
+    }
+
 
     private void Awake()
     {
@@ -89,10 +100,12 @@ public  class Main : MonoBehaviour
         LocalizationManager.Initilize();
         NetworkManager.Initilize();
         ObjectPoolManager.Initilize();
+        FUIPackageManager.Initilize();
+        FUIManager.Initilize();
+
     }
     public void AddDefaultManager()
     {
-
         ResourcesManager = gameObject.AddComponent<ResourcesManager>();
         AssetBundleManager = gameObject.AddComponent<AssetBundleManager>();
         LocalizationManager = gameObject.AddComponent<LocalizationManager>();
@@ -104,6 +117,9 @@ public  class Main : MonoBehaviour
         ScenesManager = gameObject.AddComponent<ScenesManager>();
         GameManager = gameObject.AddComponent<GameManager>();
         ObjectPoolManager = gameObject.AddComponent<ObjectPoolManager>();
+        FUIPackageManager = gameObject.AddComponent<FUIPackageManager>();
+        FUIManager = gameObject.AddComponent<FUIManager>();
+
 
     }
     public static void  AddComponentToMain<T>() where T : MonoBehaviour
@@ -116,6 +132,8 @@ public  class Main : MonoBehaviour
     }
     public void OnDestroy()
     {
+        FUIManager.DeInitilize();
+        FUIPackageManager.DeInitilize();
         NetworkManager.DeInitilize();
         LocalizationManager.DeInitilize();
         ResourcesManager.DeInitilize();

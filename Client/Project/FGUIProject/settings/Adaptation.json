@@ -1,7 +1,8 @@
 {
-	"defaultResolution":"1920,1080",
-	"designResolutionX":1920,
-	"designResolutionY":1080,
-	"scaleMode":"ScaleWithScreenSize",
-	"screenMathMode":"MatchWidthOrHeight"
+  "scaleMode": "ScaleWithScreenSize",
+  "screenMathMode": "MatchWidthOrHeight",
+  "designResolutionX": 1920,
+  "designResolutionY": 1080,
+  "devices": [],
+  "fileName": "Adaptation"
 }

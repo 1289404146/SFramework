@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<packageDescription id="2w4fpdl4" jpegQuality="80" compressPNG="true">
+<packageDescription id="2w4fpdl4">
   <resources>
     <component id="ofor0" name="Login.xml" path="/Component/" exported="true"/>
     <image id="n8hd1" name="bg_login.jpg" path="/Resource/"/>
@@ -10,5 +10,5 @@
     <component id="hbe5e" name="Lobby.xml" path="/Component/" exported="true"/>
     <image id="hbe5f" name="bg_input.png" path="/Resource/" scale="9grid" scale9grid="5,5,83,11"/>
   </resources>
-  <publish name="Hotfix" path="F:\DukeChiangGit\ET\Unity\Assets\Bundles\FUI" rotation="true" extractAlpha="true"/>
+  <publish name="Hotfix" genCode="true" extractAlpha="true"/>
 </packageDescription>

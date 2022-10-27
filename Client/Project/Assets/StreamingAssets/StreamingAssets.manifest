@@ -1,49 +1,37 @@
 ManifestFileVersion: 0
-CRC: 2180161040
+CRC: 2608097143
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
-      Name: matchaudio.unity3d
+      Name: fairygui-examples/i1.ab
       Dependencies: {}
     Info_1:
-      Name: player.unity3d
+      Name: fairygui-examples/i3.ab
       Dependencies: {}
     Info_2:
-      Name: chinese.unity3d
+      Name: fairygui-examples/bundleusage.ab
       Dependencies: {}
     Info_3:
-      Name: english.unity3d
+      Name: fairygui-examples/i2.ab
       Dependencies: {}
     Info_4:
-      Name: language.unity3d
+      Name: fairygui-examples/i0.ab
       Dependencies: {}
     Info_5:
-      Name: sphere.unity3d
+      Name: fairygui-examples/i9.ab
       Dependencies: {}
     Info_6:
-      Name: cube.unity3d
+      Name: fairygui-examples/i8.ab
       Dependencies: {}
     Info_7:
-      Name: cylinder.unity3d
+      Name: fairygui-examples/i7.ab
       Dependencies: {}
     Info_8:
-      Name: chongci2.unity3d
+      Name: fairygui-examples/i4.ab
       Dependencies: {}
     Info_9:
-      Name: chuwan2.unity3d
+      Name: fairygui-examples/i6.ab
       Dependencies: {}
     Info_10:
-      Name: countdown.unity3d
-      Dependencies: {}
-    Info_11:
-      Name: grassland-1.unity3d
-      Dependencies: {}
-    Info_12:
-      Name: grassland-2.unity3d
-      Dependencies: {}
-    Info_13:
-      Name: panmain.unity3d
-      Dependencies: {}
-    Info_14:
-      Name: uimain.unity3d
+      Name: fairygui-examples/i5.ab
       Dependencies: {}
