@@ -1,0 +1,8 @@
+namespace DCET.Hotfix
+{
+	public static partial class FUIPackage
+	{
+		public const string {thisPackageName} = "{uiPkgName}";
+{urls}
+	}
+}

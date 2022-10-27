@@ -15,7 +15,7 @@ public class UILoginLogic : UIBaseLogic
     }
     private void Awake()
     {
-        manager = GameObject.Find("NetworkManager").GetComponent<Mirror.NetworkManager>();
+        //manager = GameObject.Find("NetworkManager").GetComponent<Mirror.NetworkManager>();
 
         uiView = new UILoginView();
         uiView.Init(transform);

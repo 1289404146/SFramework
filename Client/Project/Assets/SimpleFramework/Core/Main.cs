@@ -5,7 +5,7 @@ using UnityEngine;
 
 public  class Main : MonoBehaviour
 {
-
+    public static GameObject mainObj;
     public static UIManager UIManager
     {
         set;
@@ -26,7 +26,7 @@ public  class Main : MonoBehaviour
         set;
         get;
     }
-    public static SceneManager SceneManager
+    public static ScenesManager ScenesManager
     {
         set;
         get;
@@ -65,19 +65,18 @@ public  class Main : MonoBehaviour
     private void Awake()
     {
         DontDestroyOnLoad(gameObject);
-
+        mainObj = gameObject;
     }
     private void Start()
     {
         AddDefaultManager();
         Initilize();
-        UIManager.PushPanel(UIType.UILogin);
-        GameManager.SwitchGameState(GameState.Init);
-        GameManager.SwitchGameState(GameState.start);
-        GameManager.SwitchGameState(GameState.gameing);
-        GameManager.SwitchGameState(GameState.end);
-        GameManager.SwitchGameState(GameState.DeInit);
-
+        //GameManager.SwitchGameState(GameState.Init);
+        //GameManager.SwitchGameState(GameState.start);
+        //GameManager.SwitchGameState(GameState.gameing);
+        //GameManager.SwitchGameState(GameState.end);
+        //GameManager.SwitchGameState(GameState.DeInit);
+        Main.ScenesManager.LoadScene(SceneType.Empty);
     }
     public void Initilize()
     {
@@ -85,7 +84,7 @@ public  class Main : MonoBehaviour
         AudioManager.Initilize();
         ConfigManager.Initilize();
         EventManager.Initilize();
-        SceneManager.Initilize();
+        ScenesManager.Initilize();
         ResourcesManager.Initilize();
         LocalizationManager.Initilize();
         NetworkManager.Initilize();
@@ -102,28 +101,28 @@ public  class Main : MonoBehaviour
         AudioManager = gameObject.AddComponent<AudioManager>();
         ConfigManager = gameObject.AddComponent<ConfigManager>();
         EventManager = gameObject.AddComponent<EventManager>();
-        SceneManager = gameObject.AddComponent<SceneManager>();
+        ScenesManager = gameObject.AddComponent<ScenesManager>();
         GameManager = gameObject.AddComponent<GameManager>();
         ObjectPoolManager = gameObject.AddComponent<ObjectPoolManager>();
 
     }
     public static void  AddComponentToMain<T>() where T : MonoBehaviour
     {
+
     }
     public static void RemoveComponentFromMain<T>() where T : MonoBehaviour
     {
-
+ 
     }
     public void OnDestroy()
     {
-        UIManager.DeInitilize();
-        AudioManager.DeInitilize();
-        ConfigManager.DeInitilize();
-        EventManager.DeInitilize();
-        SceneManager.DeInitilize();
-        ResourcesManager.DeInitilize();
-        LocalizationManager.DeInitilize();
         NetworkManager.DeInitilize();
-        ObjectPoolManager.DeInitilize();
+        LocalizationManager.DeInitilize();
+        ResourcesManager.DeInitilize();
+        ScenesManager.DeInitilize();
+        EventManager.DeInitilize();
+        ConfigManager.DeInitilize();
+        AudioManager.DeInitilize();
+        UIManager.DeInitilize();
     }
 }

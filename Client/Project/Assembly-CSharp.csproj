@@ -64,6 +64,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SimpleScript.cs" />
     <Compile Include="Assets\SimpleFramework\Core\Module\FSM\FSMSystem.cs" />
+    <Compile Include="Assets\Gen\demo\TbLanguage.cs" />
     <Compile Include="Assets\Gen\item\ItemExchange.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_DigitValidator.cs" />
     <Compile Include="Assets\SimpleFramework\Tools\WaitTimeScript.cs" />
@@ -99,6 +100,7 @@
     <Compile Include="Assets\SimpleFramework\Tools\MD5Helper.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshProFloatingText.cs" />
+    <Compile Include="Assets\Gen\demo\Language.cs" />
     <Compile Include="Assets\SimpleFramework\Core\Module\ResourcesManager.cs" />
     <Compile Include="Assets\SimpleFramework\Tools\FileHelper.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
@@ -133,10 +135,17 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
-    <Compile Include="Assets\SimpleFramework\Core\Module\SceneManager.cs" />
+    <Compile Include="Assets\SimpleFramework\Core\Module\ScenesManager.cs" />
     <Compile Include="Assets\SimpleFramework\Core\Base\UIBaseView.cs" />
-    <Compile Include="Assets\Gen\demo\TbLanguage.cs" />
-    <Compile Include="Assets\Gen\demo\Language.cs" />
+    <Compile Include="Assets\SimpleFramework\Tools\SaveHelper.cs" />
+    <Compile Include="Assets\SimpleFramework\Core\Module\Scenes\Game.cs" />
+    <Compile Include="Assets\SimpleFramework\Core\Module\Base\IScene.cs" />
+    <Compile Include="Assets\SimpleFramework\Core\Module\Scenes\Empty.cs" />
+    <Compile Include="Assets\SimpleFramework\Demo\GameLogic\UI\UILogic\UIBagLogic.cs" />
+    <Compile Include="Assets\SimpleFramework\Demo\GameLogic\UI\UIView\UIBagView.cs" />
+    <Compile Include="Assets\SimpleFramework\Demo\GameLogic\UI\RedPoint.cs" />
+    <Compile Include="Assets\SimpleFramework\Demo\GameLogic\UI\RedPointMgr.cs" />
+    <Compile Include="Assets\SimpleFramework\Demo\GameLogic\UI\Test.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Mirror\Plugins\Mono.Cecil\Mono.CecilX.dll" />
@@ -147,14 +156,18 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
     <None Include="Assets\Resources\Config\Player.txt" />
     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Oswald-Bold - OFL.txt" />
+    <None Include="Assets\Res\res\ui\font\num_combo.fnt" />
     <None Include="Assets\Mirror\Plugins\Mono.Cecil\Mono.CecilX.Pdb.dll" />
     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Anton OFL.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
     <None Include="Assets\ScriptTemplates\56-Mirror__Network Discovery-NewNetworkDiscovery.cs.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
+    <None Include="Assets\Res\res\ui\font\num_combat.fnt" />
     <None Include="Assets\Mirror\Plugins\Mono.Cecil\Mono.CecilX.Rocks.dll" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
+    <None Include="Assets\Res\RoleModels\WorkspaceManagement\BackupManagement\BackupSettings.xml" />
     <None Include="Assets\Mirror\Readme.txt" />
+    <None Include="Assets\Res\RoleModels\settings.xml" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
     <None Include="Assets\ScriptTemplates\57-Mirror__Network Transform-NewNetworkTransform.cs.txt" />
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
@@ -167,6 +180,7 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\Resources\Language\Chinese.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
+    <None Include="Assets\Res\res\ui\font\num_recruit.fnt" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\Bundles\Language\Language.txt" />
     <None Include="Assets\Mirror\Plugins\Mono.Cecil\License.txt" />

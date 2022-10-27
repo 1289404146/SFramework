@@ -1,0 +1,27 @@
+{
+  "libview.firstColumnWidth": 283,
+  "libview.iconScale": 0,
+  "backgroundColor": 6710886,
+  "auxline1": true,
+  "canvasColor": 10066329,
+  "auxline2": true,
+  "doc.activeDoc": "ui://1n4czledsfv94",
+  "libview.twoColumn": false,
+  "libview.expandedNodes": [
+    "2w4fpdl4",
+    "/",
+    "1n4czled",
+    "/",
+    "1n4czled",
+    "/Component/",
+    "1n4czled",
+    "/Resource/"
+  ],
+  "doc.openedDocs": [
+    "ui://1n4czledsfv94"
+  ],
+  "snapToGrid": true,
+  "gridColor": 80,
+  "libview.currentGroup": "",
+  "gridSize": 30
+}
