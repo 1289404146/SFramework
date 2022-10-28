@@ -17,7 +17,8 @@ public class FUIPackageManager : BaseMono, IManager
     public const string FUI_PACKAGE_DIR = "Assets/Resources/FUI/";
     public void Initilize()
     {
-        //AddPackage(PackageName.Hotfix);
+        AddPackage(PackageName.Hotfix);
+        AddPackage(PackageName.Runtime);
     }
     //记录包是否Add的字典
     private Dictionary<string, bool> packageAddDict = new Dictionary<string, bool>();
@@ -28,7 +29,7 @@ public class FUIPackageManager : BaseMono, IManager
     /// <param name="packageName">UI包名</param>
     public void AddPackage(string packageName)
     {
-        if (CheckPackageHaveAdd(packageName) == false)
+        if (!CheckPackageHaveAdd(packageName))
         {
             UIPackage.AddPackage(FUI_PACKAGE_DIR + packageName);
         }
@@ -52,7 +53,7 @@ public class FUIPackageManager : BaseMono, IManager
     }
     public void RemovePackage(string packageName)
     {
-        if (CheckPackageHaveAdd(packageName) == false)
+        if (CheckPackageHaveAdd(packageName))
         {
             UIPackage.RemovePackage(FUI_PACKAGE_DIR + packageName);
         }
@@ -60,6 +61,7 @@ public class FUIPackageManager : BaseMono, IManager
 
     public void DeInitilize()
     {
-        //RemovePackage(PackageName.Hotfix);
+        RemovePackage(PackageName.Hotfix);
+        RemovePackage(PackageName.Runtime);
     }
 }

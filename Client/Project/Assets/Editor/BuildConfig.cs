@@ -15,7 +15,9 @@ class BuildConfig:EditorWindow
        GetWindow<BuildConfig>(true, "导表工具");
 
     }
-    private void OnGUI()
+	string fileName1= "bat.bat";
+
+	private void OnGUI()
     {
 		try
 		{
@@ -29,7 +31,10 @@ class BuildConfig:EditorWindow
 
 				//ExportAllClass(@"./Assets/Model/Module/Demo/Config", "namespace ETModel\n{\n");
 				//ExportAllClass(@"./Assets/Hotfix/Module/Demo/Config", "using ETModel;\n\nnamespace ETHotfix\n{\n");
+				var p = @"E:\Demo\SimpleFM\Client\Luban\" + fileName1;
+				Debug.Log(Application.dataPath);
 
+				Application.OpenURL(p);
 				//Log.Info($"导出客户端配置完成!");
 			}
 

@@ -12,21 +12,28 @@
   "doc.openedDocs": [
     "ui://522her13d3x60",
     "ui://91a1ixx8fccrf",
-    "ui://5ewfozh6d3x60"
+    "ui://5rkpn5t2oof60",
+    "ui://5ewfozh6d3x60",
+    "ui://dycs02lpknatm",
+    "ui://t2ue6z12cedl0"
   ],
   "auxline1": true,
   "canvasColor": 10066329,
   "auxline2": true,
-  "doc.activeDoc": "ui://5ewfozh6d3x60",
+  "doc.activeDoc": "ui://5rkpn5t2oof60",
   "libview.twoColumn": false,
   "libview.expandedNodes": [
     "91a1ixx8",
     "/",
     "91a1ixx8",
     "/组件/",
-    "5ewfozh6",
+    "5rkpn5t2",
     "/",
-    "5ewfozh6",
+    "5rkpn5t2",
+    "/组件/",
+    "dycs02lp",
+    "/",
+    "dycs02lp",
     "/组件/"
   ],
   "snapToGrid": true,

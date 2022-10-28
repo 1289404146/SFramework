@@ -3,16 +3,16 @@
 using FairyGUI;
 using FairyGUI.Utils;
 
-namespace DCET.Runtime
+namespace DCET.Hotfix
 {
-    public partial class FUILoadingProgressBar : GProgressBar
+    public partial class TitleButton : GButton
     {
         public GImage bg;
-        public const string URL = "ui://1n4czledxzq96";
+        public const string URL = "ui://2w4fpdl4hbe5a";
 
-        public static FUILoadingProgressBar CreateInstance()
+        public static TitleButton CreateInstance()
         {
-            return (FUILoadingProgressBar)UIPackage.CreateObject("Runtime", "LoadingProgressBar");
+            return (TitleButton)UIPackage.CreateObject("Hotfix", "TitleButton");
         }
 
         public override void ConstructFromXML(XML xml)

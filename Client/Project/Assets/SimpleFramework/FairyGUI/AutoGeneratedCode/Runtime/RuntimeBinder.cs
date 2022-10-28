@@ -8,8 +8,8 @@ namespace DCET.Runtime
     {
         public static void BindAll()
         {
-            UIObjectFactory.SetPackageItemExtension(FUILoading.URL, typeof(FUILoading));
-            UIObjectFactory.SetPackageItemExtension(FUILoadingProgressBar.URL, typeof(FUILoadingProgressBar));
+            UIObjectFactory.SetPackageItemExtension(Loading.URL, typeof(Loading));
+            UIObjectFactory.SetPackageItemExtension(LoadingProgressBar.URL, typeof(LoadingProgressBar));
         }
     }
 }

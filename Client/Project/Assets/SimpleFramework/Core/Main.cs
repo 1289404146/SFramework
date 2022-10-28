@@ -1,3 +1,5 @@
+using DCET.Hotfix;
+using FairyGUI;
 using System;
 using System.Collections;
 using System.Collections.Generic;

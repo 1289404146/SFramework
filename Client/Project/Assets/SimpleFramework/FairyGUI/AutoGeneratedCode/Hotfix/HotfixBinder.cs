@@ -8,7 +8,7 @@ namespace DCET.Hotfix
     {
         public static void BindAll()
         {
-            UIObjectFactory.SetPackageItemExtension(FUITitleButton.URL, typeof(FUITitleButton));
+            UIObjectFactory.SetPackageItemExtension(TitleButton.URL, typeof(TitleButton));
             UIObjectFactory.SetPackageItemExtension(FUILobby.URL, typeof(FUILobby));
             UIObjectFactory.SetPackageItemExtension(FUILogin.URL, typeof(FUILogin));
         }

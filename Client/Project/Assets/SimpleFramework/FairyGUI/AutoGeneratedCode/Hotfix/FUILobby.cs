@@ -8,12 +8,12 @@ namespace DCET.Hotfix
     public partial class FUILobby : GComponent
     {
         public GImage bg;
-        public FUITitleButton enterButton;
+        public TitleButton enterButton;
         public const string URL = "ui://2w4fpdl4hbe5e";
 
         public static FUILobby CreateInstance()
         {
-            return (FUILobby)UIPackage.CreateObject("Hotfix", "Lobby");
+            return (FUILobby)UIPackage.CreateObject("Hotfix", "FUILobby");
         }
 
         public override void ConstructFromXML(XML xml)
@@ -21,7 +21,7 @@ namespace DCET.Hotfix
             base.ConstructFromXML(xml);
 
             bg = (GImage)GetChild("bg");
-            enterButton = (FUITitleButton)GetChild("enterButton");
+            enterButton = (TitleButton)GetChild("enterButton");
         }
     }
 }

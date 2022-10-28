@@ -1,8 +1,8 @@
 ﻿public class FUIType
 {
-    public const string UILoading = "UILoading";
-    public const string UILogin = "UILogin";
-    public const string UILobby = "UILobby";
+    public const string FUILoading = "UILoading";
+    public const string FUILogin = "FUILogin";
+    public const string FUILobby = "FUILobby";
     public const string UIRegist = "UIRegist";
     public const string UIMain = "UIMain";
     public const string UIActivity = "UIActivity";

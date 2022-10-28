@@ -13,13 +13,13 @@ namespace DCET.Hotfix
         public GTextInput accountInput;
         public GImage passwordBg;
         public GTextInput passwordInput;
-        public FUITitleButton loginButton;
+        public TitleButton loginButton;
         public GGroup content;
         public const string URL = "ui://2w4fpdl4ofor0";
 
         public static FUILogin CreateInstance()
         {
-            return (FUILogin)UIPackage.CreateObject("Hotfix", "Login");
+            return (FUILogin)UIPackage.CreateObject("Hotfix", "FUILogin");
         }
 
         public override void ConstructFromXML(XML xml)
@@ -32,7 +32,7 @@ namespace DCET.Hotfix
             accountInput = (GTextInput)GetChild("accountInput");
             passwordBg = (GImage)GetChild("passwordBg");
             passwordInput = (GTextInput)GetChild("passwordInput");
-            loginButton = (FUITitleButton)GetChild("loginButton");
+            loginButton = (TitleButton)GetChild("loginButton");
             content = (GGroup)GetChild("content");
         }
     }

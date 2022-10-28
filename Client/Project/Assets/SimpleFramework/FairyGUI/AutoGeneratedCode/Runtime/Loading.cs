@@ -5,16 +5,16 @@ using FairyGUI.Utils;
 
 namespace DCET.Runtime
 {
-    public partial class FUILoading : GComponent
+    public partial class Loading : GComponent
     {
         public GImage bg;
         public GTextField loadingText;
-        public FUILoadingProgressBar loadingBar;
+        public LoadingProgressBar loadingBar;
         public const string URL = "ui://1n4czledsfv94";
 
-        public static FUILoading CreateInstance()
+        public static Loading CreateInstance()
         {
-            return (FUILoading)UIPackage.CreateObject("Runtime", "Loading");
+            return (Loading)UIPackage.CreateObject("Runtime", "Loading");
         }
 
         public override void ConstructFromXML(XML xml)
@@ -23,7 +23,7 @@ namespace DCET.Runtime
 
             bg = (GImage)GetChild("bg");
             loadingText = (GTextField)GetChild("loadingText");
-            loadingBar = (FUILoadingProgressBar)GetChild("loadingBar");
+            loadingBar = (LoadingProgressBar)GetChild("loadingBar");
         }
     }
 }

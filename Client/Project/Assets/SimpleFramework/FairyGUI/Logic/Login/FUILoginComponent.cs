@@ -5,39 +5,24 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FUILoginComponent:BaseFUI
+public class FUILoginComponent : BaseFUI
 {
-    public override void AddListener()
-    {
-        base.AddListener();
-        _view.GetChild("loginButton").asButton.onClick.Add(Click);
-    }
+    FUILogin fuilogin;
 
-    private void Click(EventContext context)
+    public FUILoginComponent()
     {
-        //Main.FUIManager.CloseFUI(FUIType.UILogin);
-        Main.FUIManager.OpenFUI(FUIType.UILogin);
+        HotfixBinder.BindAll();
+        fuilogin = FUILogin.CreateInstance();
+        fuilogin.SetSize(GRoot.inst.width, GRoot.inst.height);
+        GRoot.inst.AddChild(fuilogin);
+        Debug.Log(fuilogin.bg.name);
     }
-
-    public override void OnBeforeCreate()
+    public override void OnEnter()
     {
-        base.OnBeforeCreate();
+        base.OnEnter();
+        fuilogin.loginButton.onClick.Add(() =>
+        {
+            Main.FUIManager.OpenPanel<FUILobbyComponent>();
+        });
     }
-    public override void OnCreate()
-    {
-        base.OnCreate(); 
-    }
-    public override void OnHide()
-    {
-        base.OnHide();
-    }
-    public override void OnDestory()
-    {
-        base.OnDestory();
-    }
-    public override void OnRefresh()
-    {
-        base.OnRefresh();
-    }
-
 }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<packageDescription id="5rkpn5t2" jpegQuality="80" compressPNG="true">
+<packageDescription id="5rkpn5t2">
   <resources>
     <component id="oof60" name="Main.xml" path="/组件/" exported="true"/>
     <component id="oof61" name="好友信息.xml" path="/组件/"/>
@@ -11,5 +11,5 @@
     <image id="qip3a" name="删除(1).png" path="/资源/"/>
     <image id="qip3b" name="拉黑(1).png" path="/资源/"/>
   </resources>
-  <publish name="Friend" path="E:\client\trunk\Assets\StreamingFairyAssets\Friend"/>
+  <publish name="Friend" path="E:\client\trunk\Assets\StreamingFairyAssets\Friend" packageCount="2" genCode="true"/>
 </packageDescription>
