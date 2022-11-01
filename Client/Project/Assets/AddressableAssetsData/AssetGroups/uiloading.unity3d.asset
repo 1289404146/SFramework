@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: uiloading.unity3d
+  m_EditorClassIdentifier: 
+  m_GroupName: uiloading.unity3d
+  m_Data:
+    m_SerializedData: []
+  m_GUID: fb90303a820d39b419657977802ad00a
+  m_SerializeEntries:
+  - m_GUID: 4bd8fb9bda370464997847a939848997
+    m_Address: Assets/Resources/UIPanel/UILoading.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 01742060e80c8b147ae907280d2e460b, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 696799d525c08ca4cb04a00a3e5fc587, type: 2}
+    - {fileID: 11400000, guid: f8581cdcd49766447988f6334ea752c2, type: 2}

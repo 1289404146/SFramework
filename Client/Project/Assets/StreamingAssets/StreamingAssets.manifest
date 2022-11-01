@@ -1,37 +1,106 @@
 ManifestFileVersion: 0
-CRC: 2608097143
+CRC: 3235322321
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
-      Name: fairygui-examples/i1.ab
+      Name: matchaudio.unity3d
       Dependencies: {}
     Info_1:
-      Name: fairygui-examples/i3.ab
+      Name: player.unity3d
       Dependencies: {}
     Info_2:
-      Name: fairygui-examples/bundleusage.ab
+      Name: chinese.unity3d
       Dependencies: {}
     Info_3:
-      Name: fairygui-examples/i2.ab
+      Name: english.unity3d
       Dependencies: {}
     Info_4:
-      Name: fairygui-examples/i0.ab
+      Name: language.unity3d
       Dependencies: {}
     Info_5:
-      Name: fairygui-examples/i9.ab
+      Name: sphere.unity3d
       Dependencies: {}
     Info_6:
-      Name: fairygui-examples/i8.ab
+      Name: cube.unity3d
       Dependencies: {}
     Info_7:
-      Name: fairygui-examples/i7.ab
+      Name: cylinder.unity3d
       Dependencies: {}
     Info_8:
-      Name: fairygui-examples/i4.ab
+      Name: chongci2.unity3d
       Dependencies: {}
     Info_9:
-      Name: fairygui-examples/i6.ab
+      Name: chuwan2.unity3d
       Dependencies: {}
     Info_10:
-      Name: fairygui-examples/i5.ab
+      Name: countdown.unity3d
+      Dependencies: {}
+    Info_11:
+      Name: grassland-1.unity3d
+      Dependencies: {}
+    Info_12:
+      Name: grassland-2.unity3d
+      Dependencies: {}
+    Info_13:
+      Name: panmain.unity3d
+      Dependencies: {}
+    Info_14:
+      Name: uimain.unity3d
+      Dependencies: {}
+    Info_15:
+      Name: uiactivity.unity3d
+      Dependencies: {}
+    Info_16:
+      Name: uibag.unity3d
+      Dependencies: {}
+    Info_17:
+      Name: uicollection.unity3d
+      Dependencies: {}
+    Info_18:
+      Name: uifriends.unity3d
+      Dependencies: {}
+    Info_19:
+      Name: uigameend.unity3d
+      Dependencies: {}
+    Info_20:
+      Name: uigamemain.unity3d
+      Dependencies: {}
+    Info_21:
+      Name: uigamestart.unity3d
+      Dependencies: {}
+    Info_22:
+      Name: uiloading.unity3d
+      Dependencies: {}
+    Info_23:
+      Name: uilogin.unity3d
+      Dependencies: {}
+    Info_24:
+      Name: uiplayerinformation.unity3d
+      Dependencies: {}
+    Info_25:
+      Name: uiranking.unity3d
+      Dependencies: {}
+    Info_26:
+      Name: uiregist.unity3d
+      Dependencies: {}
+    Info_27:
+      Name: uiselectlevel.unity3d
+      Dependencies: {}
+    Info_28:
+      Name: uishopping.unity3d
+      Dependencies: {}
+    Info_29:
+      Name: uitask.unity3d
+      Dependencies: {}
+    Info_30:
+      Name: uiunion.unity3d
+      Dependencies: {}
+    Info_31:
+      Name: hotfix_fui.unity3d
+      Dependencies: {}
+    Info_32:
+      Name: runtime_fui.unity3d
+      Dependencies: {}
+    Info_33:
+      Name: hotfix.unity3d
       Dependencies: {}

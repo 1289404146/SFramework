@@ -36,7 +36,7 @@ public class ScenesManager : BaseMono,IManager
         {
             case SceneType.Empty:
                 Debug.Log("Emptyº”‘ÿ¡À");
-                Main.mainObj.AddComponent<Empty>().Initilize();
+                Main.Instance.AddComponentToMain<Empty>().Initilize();
                 break;
             case SceneType.Game1:
                 break;

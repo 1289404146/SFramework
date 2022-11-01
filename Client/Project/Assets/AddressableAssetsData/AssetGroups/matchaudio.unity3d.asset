@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: matchaudio.unity3d
+  m_EditorClassIdentifier: 
+  m_GroupName: matchaudio.unity3d
+  m_Data:
+    m_SerializedData: []
+  m_GUID: cd3a619feee4e6b4991b568bb0776ea0
+  m_SerializeEntries:
+  - m_GUID: 743c67e286e63c842a44249ffeaa7916
+    m_Address: Assets/Resources/Source/chongci2.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: e84d9713345fed94ca754a59294f6d04
+    m_Address: Assets/Resources/Source/chuwan2.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 306894ac5f5653f46959f2eee94a29ac
+    m_Address: Assets/Resources/Source/Countdown.wav
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: e909c82da7662dc4885daa63eddacfe2
+    m_Address: Assets/Resources/Source/Grassland-1.wav
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 01742060e80c8b147ae907280d2e460b, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: d6897cc32ef4cb941bbabd1806dd19db, type: 2}
+    - {fileID: 11400000, guid: 62e1e97c6543f7d40a8eb4525e49389f, type: 2}

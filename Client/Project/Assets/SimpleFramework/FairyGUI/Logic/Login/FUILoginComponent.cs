@@ -22,7 +22,13 @@ public class FUILoginComponent : BaseFUI
         base.OnEnter();
         fuilogin.loginButton.onClick.Add(() =>
         {
+            Main.FUIManager.ClosePanel<FUILoginComponent>();
             Main.FUIManager.OpenPanel<FUILobbyComponent>();
         });
+    }
+    public override void OnExit()
+    {
+        base.OnExit();
+        fuilogin.Dispose();
     }
 }

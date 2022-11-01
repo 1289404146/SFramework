@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: chongci2.unity3d
+  m_EditorClassIdentifier: 
+  m_GroupName: chongci2.unity3d
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 99ddb467a2fd33f45b34f8e6e539b278
+  m_SerializeEntries:
+  - m_GUID: 6dc890c04afacc147ab91a7d757faf2e
+    m_Address: Assets/Bundles/Source/chongci2.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 01742060e80c8b147ae907280d2e460b, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 4320420879d0b164fa22e3b5f82b2e0e, type: 2}
+    - {fileID: 11400000, guid: 6e740061210ab0944a8a7ca70fe987c6, type: 2}

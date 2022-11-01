@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: uitask.unity3d
+  m_EditorClassIdentifier: 
+  m_GroupName: uitask.unity3d
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 7c4212a42ab1faa48b8337f9ddcddc06
+  m_SerializeEntries:
+  - m_GUID: 4a57fe4306653124691e0f0aadb8ff50
+    m_Address: Assets/Resources/UIPanel/UITask.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 01742060e80c8b147ae907280d2e460b, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 8248570edb2def744b734d71e0e1bc3a, type: 2}
+    - {fileID: 11400000, guid: e507e1cfe104ac14b8f27ee9c9e5bec9, type: 2}

@@ -21,4 +21,9 @@ class FUILobbyComponent:BaseFUI
     {
         base.OnEnter();
     }
+    public override void OnExit()
+    {
+        base.OnExit();
+        fUILobby.Dispose();
+    }
 }

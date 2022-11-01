@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: runtime_fui.unity3d
+  m_EditorClassIdentifier: 
+  m_GroupName: runtime_fui.unity3d
+  m_Data:
+    m_SerializedData: []
+  m_GUID: a9b67e405edebe844bebf75dd896ed75
+  m_SerializeEntries:
+  - m_GUID: de30ce4bdce85d147b2803bf41c29ab8
+    m_Address: Assets/Resources/FUI/Runtime_fui.bytes
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 01742060e80c8b147ae907280d2e460b, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 6e0c9a76ae712db47a6ec3747eee27a8, type: 2}
+    - {fileID: 11400000, guid: 804490cffe53271429f119bcebfa1272, type: 2}

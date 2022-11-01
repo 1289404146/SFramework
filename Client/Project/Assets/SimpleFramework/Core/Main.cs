@@ -7,7 +7,11 @@ using UnityEngine;
 
 public  class Main : MonoBehaviour
 {
-    public static GameObject mainObj;
+    public static Main Instance;
+
+    public Transform Global { get; set; }
+    public Transform Unit { get; set; }
+    public Transform UI { get; set; }
     public static UIManager UIManager
     {
         set;
@@ -78,12 +82,19 @@ public  class Main : MonoBehaviour
     private void Awake()
     {
         DontDestroyOnLoad(gameObject);
-        mainObj = gameObject;
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        Global = GameObject.Find("Init").transform;
+        //Unit = GameObject.Find("/Global/Unit").transform;
+        UI = GameObject.Find("Init/UI").transform;
     }
     private void Start()
     {
         AddDefaultManager();
         Initilize();
+
         //GameManager.SwitchGameState(GameState.Init);
         //GameManager.SwitchGameState(GameState.start);
         //GameManager.SwitchGameState(GameState.gameing);
@@ -91,7 +102,7 @@ public  class Main : MonoBehaviour
         //GameManager.SwitchGameState(GameState.DeInit);
         Main.ScenesManager.LoadScene(SceneType.Empty);
     }
-    public void Initilize()
+    private void Initilize()
     {
         UIManager.Initilize();
         AudioManager.Initilize();
@@ -106,7 +117,7 @@ public  class Main : MonoBehaviour
         FUIManager.Initilize();
 
     }
-    public void AddDefaultManager()
+    private void AddDefaultManager()
     {
         ResourcesManager = gameObject.AddComponent<ResourcesManager>();
         AssetBundleManager = gameObject.AddComponent<AssetBundleManager>();
@@ -121,18 +132,30 @@ public  class Main : MonoBehaviour
         ObjectPoolManager = gameObject.AddComponent<ObjectPoolManager>();
         FUIPackageManager = gameObject.AddComponent<FUIPackageManager>();
         FUIManager = gameObject.AddComponent<FUIManager>();
-
-
     }
-    public static void  AddComponentToMain<T>() where T : MonoBehaviour
+    public T AddComponentToMain<T>() where T : MonoBehaviour
     {
-
+        T t;
+        if (gameObject.GetComponent<T>() == null)
+        {
+            t = gameObject.AddComponent<T>();
+            return t;
+        }
+        else
+        {
+             t = gameObject.GetComponent<T>();
+             return t;
+        }
     }
-    public static void RemoveComponentFromMain<T>() where T : MonoBehaviour
+    public void RemoveComponentFromMain<T>() where T : MonoBehaviour
     {
- 
+       T t= gameObject.GetComponent<T>();
+        if (t != null)
+        {
+            Destroy(t);
+        }
     }
-    public void OnDestroy()
+    private void OnDestroy()
     {
         FUIManager.DeInitilize();
         FUIPackageManager.DeInitilize();

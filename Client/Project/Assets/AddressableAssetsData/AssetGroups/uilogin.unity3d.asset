@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: uilogin.unity3d
+  m_EditorClassIdentifier: 
+  m_GroupName: uilogin.unity3d
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 62be88a527e1680448fef505f568b30d
+  m_SerializeEntries:
+  - m_GUID: 425540f8f2a1b394c9ed1561f011a62d
+    m_Address: Assets/Resources/UIPanel/UILogin.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 01742060e80c8b147ae907280d2e460b, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 223b2c97a36169c489371b0c00143194, type: 2}
+    - {fileID: 11400000, guid: 3bf2ef27526c46d47b6b8171e737b0ff, type: 2}

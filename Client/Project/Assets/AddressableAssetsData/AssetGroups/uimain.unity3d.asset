@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: uimain.unity3d
+  m_EditorClassIdentifier: 
+  m_GroupName: uimain.unity3d
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 30e26a45decfa01449a986fcefa65c42
+  m_SerializeEntries:
+  - m_GUID: bc58a14faa5c7ce42858eb1fb962ab77
+    m_Address: Assets/Resources/UIPanel/UIMain.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 01742060e80c8b147ae907280d2e460b, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 2ac203dfa6813d34e9979c21c1b9719a, type: 2}
+    - {fileID: 11400000, guid: 9308e481e58974b4abf99b1c34314c1d, type: 2}

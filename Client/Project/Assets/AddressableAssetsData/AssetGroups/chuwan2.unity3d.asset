@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: chuwan2.unity3d
+  m_EditorClassIdentifier: 
+  m_GroupName: chuwan2.unity3d
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 1e7015107dc77ab4faac1262856cf044
+  m_SerializeEntries:
+  - m_GUID: fb50469f93717334bbeabce5bf8f62fc
+    m_Address: Assets/Bundles/Source/chuwan2.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 01742060e80c8b147ae907280d2e460b, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 410a0551c9130684f8ee25c654ea898a, type: 2}
+    - {fileID: 11400000, guid: 7ac94188fc0d68e46b8ab04ab0bd68cf, type: 2}
