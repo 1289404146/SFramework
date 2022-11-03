@@ -1,7 +1,0 @@
-E:\Demo\SimpleFM\S\Demo\bin\Debug\Demo.exe.config
-E:\Demo\SimpleFM\S\Demo\bin\Debug\Demo.exe
-E:\Demo\SimpleFM\S\Demo\bin\Debug\Demo.pdb
-E:\Demo\SimpleFM\S\Demo\obj\Debug\Demo.csproj.AssemblyReference.cache
-E:\Demo\SimpleFM\S\Demo\obj\Debug\Demo.csproj.CoreCompileInputs.cache
-E:\Demo\SimpleFM\S\Demo\obj\Debug\Demo.exe
-E:\Demo\SimpleFM\S\Demo\obj\Debug\Demo.pdb

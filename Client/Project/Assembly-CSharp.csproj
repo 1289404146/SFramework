@@ -266,7 +266,7 @@
     <Compile Include="Assets\FairyGUI\Scripts\Gesture\PinchGesture.cs" />
     <Compile Include="Assets\SimpleFramework\FairyGUI\Logic\Lobby\Factory\FUILobbyFactory.cs" />
     <Compile Include="Assets\SimpleFramework\FairyGUI\Logic\Login\FUILoginComponent.cs" />
-    <Compile Include="Assets\SimpleFramework\Core\Module\Net\NetworkManager.cs" />
+    <Compile Include="Assets\SimpleFramework\Core\Module\Net\ClientManager.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\UI\Controller.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\DropdownSample.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\UI\GLabel.cs" />
@@ -318,6 +318,18 @@
     <Compile Include="Assets\SimpleFramework\Core\Module\ScenesManager.cs" />
     <Compile Include="Assets\SimpleFramework\Core\Module\UGUI\UIBaseView.cs" />
     <Compile Include="Assets\SimpleFramework\Core\GameConfig.cs" />
+    <Compile Include="Assets\SimpleFramework\Hotfix\HotfixMain.cs" />
+    <Compile Include="Assets\SimpleFramework\Core\Base\NewBehaviourScript.cs" />
+    <Compile Include="Assets\SimpleFramework\Core\Module\Net\Message.cs" />
+    <Compile Include="Assets\SimpleFramework\Core\Module\Net\Common\ActionCode.cs" />
+    <Compile Include="Assets\SimpleFramework\Core\Module\Net\Common\RoleType.cs" />
+    <Compile Include="Assets\SimpleFramework\Core\Module\Net\Common\ReturnCode.cs" />
+    <Compile Include="Assets\SimpleFramework\Core\Module\Net\Common\RequestCode.cs" />
+    <Compile Include="Assets\SimpleFramework\Tools\DictionaryExtension.cs" />
+    <Compile Include="Assets\SimpleFramework\Core\Module\Net\BaseRequest.cs" />
+    <Compile Include="Assets\SimpleFramework\Core\Module\Net\RequestManager.cs" />
+    <Compile Include="Assets\SimpleFramework\Core\Module\Net\Request\AttackRequest.cs" />
+    <Compile Include="Assets\SimpleFramework\Core\Module\Net\Request\LoginRequest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Mirror\Plugins\Mono.Cecil\Mono.CecilX.dll" />
