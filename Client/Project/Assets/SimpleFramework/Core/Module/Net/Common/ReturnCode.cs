@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using System.Text;
 
-
-    public enum ReturnCode
-    {
-        Success,
-        Fail,
-        NotFound
-    }
+/// <summary>
+/// 返回码
+/// </summary>
+public enum ReturnCode
+{
+    Success,
+    Fail,
+    NotFound
+}

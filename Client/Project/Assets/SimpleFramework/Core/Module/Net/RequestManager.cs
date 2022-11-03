@@ -7,22 +7,33 @@ using UnityEngine;
 
 public class RequestManager : BaseMono, IManager
 {
-    private Dictionary<ActionCode, BaseRequest> requestDict = new Dictionary<ActionCode, BaseRequest>();
+    private Dictionary<ActionCode, BaseRequest> requestDict ;
 
     public void Initilize()
     {
+        requestDict = new Dictionary<ActionCode, BaseRequest>();
+        requestDict.Clear();
     }
     public void DeInitilize()
     {
+        requestDict.Clear();
+        requestDict = null;
     }
 
     public void AddRequest(ActionCode actionCode, BaseRequest request)
     {
+        if (requestDict.ContainsKey(actionCode))
+        {
+            return;
+        }
         requestDict.Add(actionCode, request);
     }
     public void RemoveRequest(ActionCode actionCode)
     {
-        requestDict.Remove(actionCode);
+        if (requestDict.ContainsKey(actionCode))
+        {
+            requestDict.Remove(actionCode);
+        }
     }
     public void HandleReponse(ActionCode actionCode, string data)
     {

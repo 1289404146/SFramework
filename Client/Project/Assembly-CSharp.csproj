@@ -61,6 +61,7 @@
     <Compile Include="Assets\FairyGUI\Scripts\Core\Text\TypingEffect.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\UI\GSlider.cs" />
     <Compile Include="Assets\SimpleFramework\Demo\GameLogic\UI\UILogic\UIBagLogic.cs" />
+    <Compile Include="Assets\SimpleFramework\Core\Module\Net\Request\GameOverRequest.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\UI\GProgressBar.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\UI\UIContentScaler.cs" />
     <Compile Include="Assets\Gen\demo\TbEquip.cs" />
@@ -81,12 +82,14 @@
     <Compile Include="Assets\FairyGUI\Scripts\Core\Mesh\PolygonMesh.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\Event\EventContext.cs" />
     <Compile Include="Assets\SimpleFramework\Core\Module\FSM\FSMSystem.cs" />
+    <Compile Include="Assets\SimpleFramework\Core\Base\NewBehaviourScript.cs" />
     <Compile Include="Assets\Gen\demo\TbLanguage.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\Core\Stats.cs" />
     <Compile Include="Assets\SimpleFramework\Core\Module\FairyUI\FUIType.cs" />
     <Compile Include="Assets\Gen\item\ItemExchange.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_DigitValidator.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\Core\Text\DynamicFont.cs" />
+    <Compile Include="Assets\SimpleFramework\Core\Module\Net\Common\RoleType.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\Core\HitTest\HitTestContext.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\Core\NMaterial.cs" />
     <Compile Include="Assets\SimpleFramework\Tools\WaitTimeScript.cs" />
@@ -95,6 +98,7 @@
     <Compile Include="Assets\FairyGUI\Scripts\Core\GoWrapper.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\Core\Text\InputTextField.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\Core\HitTest\MeshColliderHitTest.cs" />
+    <Compile Include="Assets\SimpleFramework\Core\Module\Net\Request\StartGameRequest.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\UI\GLoader.cs" />
     <Compile Include="Assets\SimpleFramework\Core\Module\UGUI\UILayer.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\Core\Mesh\VertexBuffer.cs" />
@@ -108,6 +112,7 @@
     <Compile Include="Assets\FairyGUI\Scripts\Utils\XMLIterator.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
     <Compile Include="Assets\SimpleFramework\Core\Module\Base\IScene.cs" />
+    <Compile Include="Assets\SimpleFramework\Core\Module\Net\Request\BaseRequest.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\UI\GTextField.cs" />
     <Compile Include="Assets\SimpleFramework\Demo\GameLogic\UI\UIView\UIGameMainView.cs" />
     <Compile Include="Assets\SimpleFramework\Tools\ByteHelper.cs" />
@@ -127,12 +132,15 @@
     <Compile Include="Assets\SimpleFramework\Core\Module\Event\EventManager.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\UI\GList.cs" />
     <Compile Include="Assets\Gen\item\Item.cs" />
+    <Compile Include="Assets\SimpleFramework\Core\Module\Net\Request\StartPlayRequest.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\Tween\EaseManager.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\UI\Gears\GearLook.cs" />
     <Compile Include="Assets\SimpleFramework\Demo\GameLogic\UI\UILogic\UIMainLogic.cs" />
+    <Compile Include="Assets\SimpleFramework\Core\Module\Net\Request\QuitRoomRequest.cs" />
     <Compile Include="Assets\Gen\item\EQuality.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\Tween\GTweener.cs" />
+    <Compile Include="Assets\SimpleFramework\Core\Module\Net\Request\MoveRequest.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\UI\GComponent.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\Core\BlendMode.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\Core\Container.cs" />
@@ -148,9 +156,11 @@
     <Compile Include="Assets\SimpleFramework\Demo\GameLogic\UI\UILogic\UIGameMainLogic.cs" />
     <Compile Include="Assets\SimpleFramework\Core\Module\FSM\ChaseState.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\UI\UIObjectFactory.cs" />
+    <Compile Include="Assets\SimpleFramework\Core\Module\Net\Request\RegisterRequest.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\Event\IEventDispatcher.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\UI\UIPackage.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\Core\Mesh\FillMesh.cs" />
+    <Compile Include="Assets\SimpleFramework\Core\Module\Net\Common\RequestCode.cs" />
     <Compile Include="Assets\Gen\item\TbItem.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\Core\Mesh\PlaneMesh.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\UI\Action\ChangePageAction.cs" />
@@ -166,11 +176,14 @@
     <Compile Include="Assets\SimpleFramework\Scripts\TableManager.cs" />
     <Compile Include="Assets\SimpleFramework\Demo\GameLogic\UI\UIView\UILoginView.cs" />
     <Compile Include="Assets\SimpleFramework\Demo\GameLogic\UI\UILogic\UILoginLogic.cs" />
+    <Compile Include="Assets\SimpleFramework\Core\Module\Net\Common\ActionCode.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\Filter\IFilter.cs" />
+    <Compile Include="Assets\SimpleFramework\Core\Module\Net\Request\UpdateResultRequest.cs" />
     <Compile Include="Assets\SimpleFramework\FairyGUI\AutoGeneratedCode\Hotfix\FUILogin.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\Core\StageEngine.cs" />
     <Compile Include="Assets\SimpleFramework\Core\Module\AB\AssetBundleManager.cs" />
+    <Compile Include="Assets\SimpleFramework\Tools\DictionaryExtension.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\Core\HitTest\IHitTest.cs" />
     <Compile Include="Assets\SimpleFramework\Core\Module\UGUI\UIType.cs" />
     <Compile Include="Assets\SimpleFramework\Core\Module\FSM\PatrolState.cs" />
@@ -190,8 +203,8 @@
     <Compile Include="Assets\FairyGUI\Scripts\Utils\ToolSet.cs" />
     <Compile Include="Assets\SimpleFramework\Tools\MD5Helper.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\UI\GButton.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshProFloatingText.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\Core\Text\TextFormat.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\Core\Text\BitmapFont.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\UI\Gears\IAnimationGear.cs" />
@@ -200,12 +213,13 @@
     <Compile Include="Assets\FairyGUI\Scripts\Core\HitTest\ShapeHitTest.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\UI\GComboBox.cs" />
     <Compile Include="Assets\SimpleFramework\Tools\FileHelper.cs" />
-    <Compile Include="Assets\SimpleFramework\Demo\GameLogic\UI\RedPoint.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\UI\DragDropManager.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\Core\Stage.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\UI\Gears\GearDisplay.cs" />
     <Compile Include="Assets\SimpleFramework\Core\Module\FairyUI\BaseFUI.cs" />
+    <Compile Include="Assets\SimpleFramework\Demo\GameLogic\UI\RedPoint.cs" />
+    <Compile Include="Assets\SimpleFramework\Core\Module\Net\Message.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\UI\ScrollPane.cs" />
     <Compile Include="Assets\SimpleFramework\Core\Module\ObjectPoolManager.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\Utils\XMLList.cs" />
@@ -217,8 +231,8 @@
     <Compile Include="Assets\FairyGUI\Scripts\Core\Text\RichTextField.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\Core\NGraphics.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
-    <Compile Include="Assets\FairyGUI\Scripts\UI\Margin.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\Utils\ZipReader.cs" />
+    <Compile Include="Assets\FairyGUI\Scripts\UI\Margin.cs" />
     <Compile Include="Assets\SimpleFramework\Core\Module\Scenes\Empty.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\UI\Gears\GearColor.cs" />
     <Compile Include="Assets\SimpleFramework\Core\Module\ConfigManager.cs" />
@@ -233,26 +247,34 @@
     <Compile Include="Assets\SimpleFramework\Core\Module\FairyUI\FUIManager.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\EnvMapAnimator.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\UI\Gears\GearDisplay2.cs" />
-    <Compile Include="Assets\FairyGUI\Scripts\UI\Transition.cs" />
+    <Compile Include="Assets\SimpleFramework\Core\Module\Net\Request\ListRoomRequest.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\UI\GTreeNode.cs" />
+    <Compile Include="Assets\FairyGUI\Scripts\UI\Transition.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_UiFrameRateCounter.cs" />
     <Compile Include="Assets\Gen\Tables.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\UI\Gears\GearBase.cs" />
+    <Compile Include="Assets\SimpleFramework\Core\GameConfig.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\Core\Shape.cs" />
     <Compile Include="Assets\SimpleFramework\Core\Module\Base\BaseMono.cs" />
     <Compile Include="Assets\SimpleFramework\Tools\SaveHelper.cs" />
+    <Compile Include="Assets\SimpleFramework\Core\Module\Net\Request\ShootRequest.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\UI\GRoot.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\UI\GMovieClip.cs" />
     <Compile Include="Assets\SimpleFramework\Core\Module\UGUI\UIManager.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\Core\Mesh\LineMesh.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\Event\InputEvent.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\Core\Text\RTLSupport.cs" />
+    <Compile Include="Assets\SimpleFramework\Hotfix\HotfixMain.cs" />
+    <Compile Include="Assets\SimpleFramework\Core\Module\Net\Request\QuitBattleRequest.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\Filter\ColorFilter.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\UI\Gears\GearText.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\Core\Text\FontManager.cs" />
+    <Compile Include="Assets\SimpleFramework\Core\Module\Net\Request\CreateRoomRequest.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\Core\HitTest\ColliderHitTest.cs" />
     <Compile Include="Assets\Gen\demo\Equip.cs" />
+    <Compile Include="Assets\SimpleFramework\Core\Module\Net\RequestManager.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
+    <Compile Include="Assets\SimpleFramework\Core\Module\Net\Request\ShowTimerRequest.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\Core\Mesh\RoundedRectMesh.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\UI\Gears\IColorGear.cs" />
     <Compile Include="Assets\SimpleFramework\Core\Module\Data\GameDataManager.cs" />
@@ -282,15 +304,18 @@
     <Compile Include="Assets\FairyGUI\Scripts\Tween\GTween.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TeleType.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_ExampleScript_01.cs" />
+    <Compile Include="Assets\SimpleFramework\Core\Module\Net\Request\AttackRequest.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\Core\Mesh\EllipseMesh.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\UI\Action\PlayTransitionAction.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\Core\ShaderConfig.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextConsoleSimulator.cs" />
+    <Compile Include="Assets\SimpleFramework\Core\Module\Net\Request\LoginRequest.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\UI\AsyncCreationHelper.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\UI\RelationItem.cs" />
-    <Compile Include="Assets\FairyGUI\Scripts\UI\FieldTypes.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ObjectSpin.cs" />
+    <Compile Include="Assets\FairyGUI\Scripts\UI\FieldTypes.cs" />
+    <Compile Include="Assets\SimpleFramework\Core\Module\Net\Request\JoinRoomRequest.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\Utils\Html\HtmlParser.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\UI\TranslationHelper.cs" />
     <Compile Include="Assets\SimpleFramework\FairyGUI\AutoGeneratedCode\Runtime\Loading.cs" />
@@ -301,12 +326,14 @@
     <Compile Include="Assets\SimpleFramework\Demo\GameLogic\UI\Test.cs" />
     <Compile Include="Assets\SimpleFramework\Demo\GameLogic\UI\UIView\UIMainView.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
+    <Compile Include="Assets\SimpleFramework\Core\Module\Net\Common\ReturnCode.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\Core\Text\TextField.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\Core\Mesh\RegularPolygonMesh.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\UI\Gears\GearAnimation.cs" />
     <Compile Include="Assets\SimpleFramework\Core\Module\Define.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\UI\EMRenderSupport.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\Tween\TweenValue.cs" />
+    <Compile Include="Assets\SimpleFramework\Core\Module\Net\Request\UpdateRoomRequest.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\SimpleFramework\FairyGUI\AutoGeneratedCode\Runtime\RuntimeBinder.cs" />
     <Compile Include="Assets\SimpleFramework\FairyGUI\AutoGeneratedCode\Runtime\LoadingProgressBar.cs" />
@@ -317,19 +344,8 @@
     <Compile Include="Assets\FairyGUI\Scripts\Core\DisplayOptions.cs" />
     <Compile Include="Assets\SimpleFramework\Core\Module\ScenesManager.cs" />
     <Compile Include="Assets\SimpleFramework\Core\Module\UGUI\UIBaseView.cs" />
-    <Compile Include="Assets\SimpleFramework\Core\GameConfig.cs" />
-    <Compile Include="Assets\SimpleFramework\Hotfix\HotfixMain.cs" />
-    <Compile Include="Assets\SimpleFramework\Core\Base\NewBehaviourScript.cs" />
-    <Compile Include="Assets\SimpleFramework\Core\Module\Net\Message.cs" />
-    <Compile Include="Assets\SimpleFramework\Core\Module\Net\Common\ActionCode.cs" />
-    <Compile Include="Assets\SimpleFramework\Core\Module\Net\Common\RoleType.cs" />
-    <Compile Include="Assets\SimpleFramework\Core\Module\Net\Common\ReturnCode.cs" />
-    <Compile Include="Assets\SimpleFramework\Core\Module\Net\Common\RequestCode.cs" />
-    <Compile Include="Assets\SimpleFramework\Tools\DictionaryExtension.cs" />
-    <Compile Include="Assets\SimpleFramework\Core\Module\Net\BaseRequest.cs" />
-    <Compile Include="Assets\SimpleFramework\Core\Module\Net\RequestManager.cs" />
-    <Compile Include="Assets\SimpleFramework\Core\Module\Net\Request\AttackRequest.cs" />
-    <Compile Include="Assets\SimpleFramework\Core\Module\Net\Request\LoginRequest.cs" />
+    <Compile Include="Assets\SimpleFramework\Demo\GameLogic\UI\UIView\UIRegistView.cs" />
+    <Compile Include="Assets\SimpleFramework\Demo\GameLogic\UI\UILogic\UIRegistLogic.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Mirror\Plugins\Mono.Cecil\Mono.CecilX.dll" />
@@ -977,20 +993,26 @@
     <Reference Include="Unity.VSCode.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEditor.CacheServer">
+      <HintPath>Library\ScriptAssemblies\UnityEditor.CacheServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Addressables">
+      <HintPath>Library\ScriptAssemblies\Unity.Addressables.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualStudio.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Timeline.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.Timeline">
       <HintPath>Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
       <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ResourceManager">
+      <HintPath>Library\ScriptAssemblies\Unity.ResourceManager.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
@@ -1004,20 +1026,14 @@
     <Reference Include="UnityEngine.UI">
       <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Addressables">
-      <HintPath>Library\ScriptAssemblies\Unity.Addressables.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Addressables.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.Addressables.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.CacheServer">
-      <HintPath>Library\ScriptAssemblies\UnityEditor.CacheServer.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.ResourceManager">
-      <HintPath>Library\ScriptAssemblies\Unity.ResourceManager.dll</HintPath>
+    <Reference Include="Unity.Timeline.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ScriptableBuildPipeline">
       <HintPath>Library\ScriptAssemblies\Unity.ScriptableBuildPipeline.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Addressables.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Addressables.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ScriptableBuildPipeline.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.ScriptableBuildPipeline.Editor.dll</HintPath>
@@ -1036,13 +1052,13 @@
       <Project>{DB845429-F5C7-D625-09EA-DF9113FFE454}</Project>
       <Name>kcp2k</Name>
     </ProjectReference>
-    <ProjectReference Include="Mirror.Editor.csproj">
-      <Project>{C22BD3AE-AEB7-6647-919E-C6F26B7D8A7A}</Project>
-      <Name>Mirror.Editor</Name>
-    </ProjectReference>
     <ProjectReference Include="Mirror.Examples.csproj">
       <Project>{2E8A20E9-92BC-E382-B98E-E17A1BC930B3}</Project>
       <Name>Mirror.Examples</Name>
+    </ProjectReference>
+    <ProjectReference Include="Mirror.Editor.csproj">
+      <Project>{C22BD3AE-AEB7-6647-919E-C6F26B7D8A7A}</Project>
+      <Name>Mirror.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Mirror.CompilerSymbols.csproj">
       <Project>{413A8013-2B41-799B-CD52-7811635115FA}</Project>

@@ -10,7 +10,6 @@ using UnityEngine;
 
 public class ClientManager : BaseMono,IManager
 {
-
     private const string IP = "127.0.0.1";
     private const int PORT = 6688;
 
@@ -32,7 +31,6 @@ public class ClientManager : BaseMono,IManager
             Debug.LogWarning("无法连接到服务器端，请检查您的网络！！" + e);
         }
     }
- 
     private void StartReceive()
     {
         clientSocket.BeginReceive(msg.Data, msg.StartIndex, msg.RemainSize, SocketFlags.None, ReceiveCallback, null);
@@ -53,18 +51,19 @@ public class ClientManager : BaseMono,IManager
             Debug.Log(e);
         }
     }
+    public void Update()
+    {
+
+    }
     private void OnProcessDataCallback(ActionCode actionCode, string data)
     {
         Main.RequestManager.HandleReponse(actionCode, data);
-
     }
     public void SendRequest(RequestCode requestCode, ActionCode actionCode, string data)
     {
         byte[] bytes = Message.PackData(requestCode, actionCode, data);
         clientSocket.Send(bytes);
     }
-
-
     public void DeInitilize()
     {
         try
