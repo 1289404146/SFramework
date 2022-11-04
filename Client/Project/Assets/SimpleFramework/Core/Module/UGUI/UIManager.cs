@@ -81,14 +81,14 @@ public class UIManager : BaseMono,IManager
     }
 
     //获取dicPanel中存储的基层UIBase的类，如果为空，先加载添加进去
-    private UIBaseLogic GetPanel(string panelType)
+    public T GetPanel<T>(string panelType)where T : UIBaseLogic
     {
         if (dicPanel == null)
             dicPanel = new Dictionary<string, UIBaseLogic>();
 
         panelType = panelType.ToLower();
         if (dicPanel.ContainsKey(panelType))
-            return dicPanel[panelType];
+            return dicPanel[panelType] as T;
         else
         {
             string path = string.Empty;
@@ -101,12 +101,12 @@ public class UIManager : BaseMono,IManager
             GameObject goPanel = GameObject.Instantiate(go, canvasTf, false);
             UIBaseLogic panel = goPanel.GetComponent<UIBaseLogic>();
             dicPanel.Add(panelType, panel);
-            return panel;
+            return panel as T;
         }
     }
 
     //打开UI界面
-    public void PushPanel(string panelType)
+    public void PushPanel<T>(string panelType)where T: UIBaseLogic
     {
         if (panelStack == null)
         {
@@ -120,7 +120,7 @@ public class UIManager : BaseMono,IManager
             top.OnPause();
         }
 
-        UIBaseLogic panel = GetPanel(panelType);
+        UIBaseLogic panel = GetPanel<T>(panelType);
         panelStack.Push(panel);
         panel.OnEnter();
     }

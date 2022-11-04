@@ -53,11 +53,15 @@ public class ClientManager : BaseMono,IManager
     }
     public void Update()
     {
-
+        if (msgs.Count>0)
+        {
+            Msg msg= msgs.Dequeue();
+            Main.RequestManager.HandleReponse(msg.code, msg.data);
+        }
     }
     private void OnProcessDataCallback(ActionCode actionCode, string data)
     {
-        Main.RequestManager.HandleReponse(actionCode, data);
+        msgs.Enqueue(new Msg() { code = actionCode, data = data });
     }
     public void SendRequest(RequestCode requestCode, ActionCode actionCode, string data)
     {
@@ -75,6 +79,12 @@ public class ClientManager : BaseMono,IManager
             Debug.LogWarning("无法关闭跟服务器端的连接！！" + e);
         }
         Debug.Log("NetworkManager------DeInitilize");
+    }
+    public Queue<Msg> msgs = new Queue<Msg>();
+    public class Msg
+    {
+        public ActionCode code;
+        public string data;
     }
 }
 

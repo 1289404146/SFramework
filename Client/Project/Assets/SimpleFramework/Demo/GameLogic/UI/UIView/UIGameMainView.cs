@@ -10,8 +10,10 @@ using UnityEngine.UI;
 public class UIGameMainView : UIBaseView
 {
     public Button button;
+    public Text nameText;
+
     public override void Init(Transform transform)
     {
-        button = transform.Find("Button1").GetComponent<Button>();
+        nameText = transform.Find("Text").GetComponent<Text>();
     }
 }

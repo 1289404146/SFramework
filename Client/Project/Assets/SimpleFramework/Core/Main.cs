@@ -1,5 +1,7 @@
 using DCET.Hotfix;
 using FairyGUI;
+using Google.Protobuf;
+using Person;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -96,6 +98,7 @@ public  class Main : MonoBehaviour
     }
     private void Start()
     {
+        //Test();
         AddDefaultManager();
         Initilize();
 
@@ -111,8 +114,32 @@ public  class Main : MonoBehaviour
             });
         Main.RequestManager.AddRequest(ActionCode.Attack, attackRequest);
         Main.ClientManager.SendRequest(RequestCode.Game, ActionCode.Attack, 46.ToString());
+        Debug.Log("send 46");
+    }
+
+    private void Test()
+    {
+        //创建OnePerson对象并初始化
+        OnePerson onePerson = new OnePerson();
+        onePerson.Name = "张三";
+        onePerson.IdNumber = 000001;
+        onePerson.Gender = genders.Man;
+        onePerson.Profession = "法外狂徒";
+        //将onePerson对象转换为字节数组
+        byte[] dataByte = onePerson.ToByteArray();
+        //...
+        //将字节数组转换为OnePerson对象
+        IMessage message = new OnePerson();
+        OnePerson mySelf = new OnePerson();
+        mySelf = (OnePerson)message.Descriptor.Parser.ParseFrom(dataByte);
+        //打印输出
+        Debug.Log($"My name is:{mySelf.Name}");
+        Debug.Log($"My idNumber is:{mySelf.IdNumber}");
+        Debug.Log($"My gender is:{mySelf.Gender}");
+        Debug.Log($"My profession is:{mySelf.Profession}");
 
     }
+
     private void AddDefaultManager()
     {
         RequestManager = gameObject.AddComponent<RequestManager>();

@@ -1,0 +1,100 @@
+//Protobuf版本
+syntax="proto3";
+//包名,类似C#中的命名空间
+package person;
+
+//一条message,类似C#中的类
+message OnePerson
+{
+	//[定义声明][数据类型][字段名]=[编号][默认值]
+	//[定义声明]:required:必填字段;optional:可选字段;repeated:可重复字段
+	//[数据类型]:字段的类型,与C#稍有不同,更多类型及其说明请参考官网文档.
+	//[编    号]:唯一标识字段,不可重复,编号1-15使用1个字节进行编码,编号16之后使用两个字节进行编码,推荐将1-15预留给常用的字段,此外编号19000-19999为官方预留,不能使用.
+	 string name = 1;//[default = "张三"]
+	 int64 idNumber = 2;//[default = 0001]
+	 genders gender = 3;
+	 optional string profession = 101;//[default = "法外狂徒"]
+}
+//枚举类型
+enum genders
+{	
+	//该参数为true表示允许字段拥有别名,别名使用相同编号.
+	option allow_alias = true;
+	man = 0;
+	boy = 0;
+	woman = 1;
+	girl = 1;
+}
+
+
+message C2R_Login // IRequest
+{
+	int32 RpcId = 90;
+	string	Account	 = 1;	// 帐号
+	string	Password = 2;	// 密码
+}
+
+message R2C_Login // IResponse
+{
+	int32 RpcId = 90;
+	int32 Error = 91;
+	string Message = 92;
+	string Address = 1;
+	int64 Key	    = 2;
+}
+
+message C2G_LoginGate // IRequest
+{
+	int32 RpcId = 90;
+	int64 Key = 1;	// 帐号
+}
+
+message G2C_LoginGate // IResponse
+{
+	int32 RpcId = 90;
+	int32 Error = 91;
+	string Message = 92;
+	int64 PlayerId = 1;
+}
+
+message G2C_TestHotfixMessage // IMessage
+{
+	string Info = 1;
+}
+
+message C2M_TestActorRequest // IActorLocationRequest
+{
+	int32 RpcId = 90;
+	int64 ActorId = 91;
+	string Info = 1;
+}
+
+message M2C_TestActorResponse // IActorLocationResponse
+{
+	int32 RpcId = 90;
+	int32 Error = 91;
+	string Message = 92;
+	string Info = 1;
+}
+
+message PlayerInfo // IMessage
+{
+	int32 RpcId = 90;
+}
+
+message C2G_PlayerInfo // IRequest
+{
+	int32 RpcId = 90;
+}
+
+message G2C_PlayerInfo // IResponse
+{
+	int32 RpcId = 90;
+	int32 Error = 91;
+	string Message = 92;
+	PlayerInfo PlayerInfo = 1;
+	repeated PlayerInfo PlayerInfos = 2;
+    repeated string TestRepeatedString = 3;
+    repeated int32 TestRepeatedInt32 = 4;
+    repeated int64 TestRepeatedInt64 = 5;
+}

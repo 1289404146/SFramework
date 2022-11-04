@@ -9,7 +9,6 @@ public class UIGameMainLogic : UIBaseLogic
 {
 
     public UIGameMainView uiView;
-    Mirror.NetworkManager manager;
 
     public UIGameMainLogic()
     {
@@ -19,10 +18,13 @@ public class UIGameMainLogic : UIBaseLogic
 
     private void Awake()
     {
-        manager = GameObject.Find("NetworkManager").GetComponent<Mirror.NetworkManager>();
         uiView = new UIGameMainView();
         uiView.Init(transform);
-        uiView.button.onClick.AddListener(Button1Click);
+        //uiView.button.onClick.AddListener(Button1Click);
+    }
+    public void SetName(string value)
+    {
+        uiView.nameText.text = value;
     }
     public override void OnEnter()
     {
@@ -48,9 +50,8 @@ public class UIGameMainLogic : UIBaseLogic
     }
     private void Button1Click()
     {
-        manager.StopHost();
         Main.UIManager.PopPanel();
-        Main.UIManager.PushPanel(UIType.UILogin);
+        Main.UIManager.PushPanel<UILoginLogic>(UIType.UILogin);
 
     }
 }

@@ -1,3 +1,5 @@
+using Google.Protobuf;
+using Person;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -27,36 +29,28 @@ public class UILoginLogic : UIBaseLogic
     {
         base.OnEnter();
         gameObject.SetActive(true);
-        LoginRequest loginRequest = new LoginRequest(RequestCode.User, ActionCode.Login, (data) => {
+        Main.RequestManager.AddRequest(ActionCode.Login, new LoginRequest(RequestCode.User, ActionCode.Login, (data) => {
             string[] strs = data.Split(',');
             ReturnCode returnCode = (ReturnCode)int.Parse(strs[0]);
-            this.returnCode = returnCode;
             if (returnCode == ReturnCode.Success)
             {
                 string username = strs[1];
                 int totalCount = int.Parse(strs[2]);
                 int winCount = int.Parse(strs[3]);
-                Debug.Log("未找到");
+                Debug.Log(data);
+                Main.UIManager.PopPanel();
+                Main.UIManager.PushPanel<UIGameMainLogic>(UIType.UIGameMain);
+                Main.UIManager.GetPanel<UIGameMainLogic>(UIType.UIGameMain).SetName(username);
+
                 //UserData ud = new UserData(username, totalCount, winCount);
                 //facade.SetUserData(ud);
             }
-            else {
-
+            else
+            {
+                Debug.Log(data);
                 Debug.Log("未找到");
             }
-
-        });
-        Main.RequestManager.AddRequest(ActionCode.Login, loginRequest);
-    }
-    ReturnCode returnCode;
-    private void Update()
-    {
-
-        if (returnCode!=ReturnCode.Success)
-        {
-            Main.UIManager.PopPanel();
-            Main.UIManager.PushPanel(UIType.UIRegist);
-        }
+        }));
     }
     public override void OnPause()
     {
@@ -68,16 +62,10 @@ public class UILoginLogic : UIBaseLogic
         base.OnResume();
         gameObject.SetActive(true);
     }
-    public void Close(ReturnCode dd)
-    {
-        if (dd!=ReturnCode.Success)
-        {
-            Main.UIManager.PopPanel();
-            Main.UIManager.PushPanel(UIType.UIRegist);
-        }
-    }
     private void RegistClick()
     {
+        Main.UIManager.PopPanel();
+        Main.UIManager.PushPanel<UILoginLogic>(UIType.UIRegist);
     }
 
     private void QuitClick()
@@ -97,17 +85,31 @@ public class UILoginLogic : UIBaseLogic
         }
         if (msg != "")
         {
-           Debug.Log(msg); 
+            Debug.Log(msg);
             return;
         }
 
         string data = uiView.acount.text + "," + uiView.password.text;
-        Debug.Log(data);
+        //创建OnePerson对象并初始化
+        OnePerson onePerson = new OnePerson();
+        onePerson.Name = "张三";
+        onePerson.IdNumber = 000001;
+        onePerson.Gender = genders.Man;
+        onePerson.Profession = "法外狂徒";
+        //将onePerson对象转换为字节数组
+        string dataByte = onePerson.ToString();
+
+        Debug.Log(dataByte);
         Main.ClientManager.SendRequest(RequestCode.User, ActionCode.Login, data);
     }
     public override void OnExit()
     {
         base.OnExit();
         gameObject.SetActive(false);
+    }
+    [Serializable]
+    public class Person 
+    {
+        public int age ;
     }
 }

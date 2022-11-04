@@ -69,7 +69,8 @@ using MySql.Data.MySqlClient;
         {
             try
             {
-                MySqlCommand cmd = new MySqlCommand("insert into user set username = @username , password = @password", conn);
+                MySqlCommand cmd = new MySqlCommand("insert into user set id=@id,username = @username , password = @password", conn);
+                cmd.Parameters.AddWithValue("id", username);
                 cmd.Parameters.AddWithValue("username", username);
                 cmd.Parameters.AddWithValue("password", password);
                 cmd.ExecuteNonQuery();
