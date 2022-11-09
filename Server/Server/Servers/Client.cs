@@ -81,7 +81,7 @@ using GameServer.Tool;
                 {
                     Close();
                 }
-                msg.ReadMessage(count,OnProcessMessage);
+                msg.ReadMessageFromProtol(count, OnProcessMessageFromProtol);
                 Start();
             }
             catch (Exception e)
@@ -90,7 +90,11 @@ using GameServer.Tool;
                 Close();
             }
         }
-        private void OnProcessMessage(RequestCode requestCode,ActionCode actionCode,string data)
+    private void OnProcessMessageFromProtol(RequestCode requestCode, ActionCode actionCode, byte[] data)
+    {
+        server.HandleProtolRequest(requestCode, actionCode, data, this);
+    }
+    private void OnProcessMessage(RequestCode requestCode,ActionCode actionCode,string data)
         {
             server.HandleRequest(requestCode, actionCode, data, this);
         }

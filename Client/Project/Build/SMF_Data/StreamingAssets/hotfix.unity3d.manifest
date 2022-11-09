@@ -1,0 +1,20 @@
+ManifestFileVersion: 0
+CRC: 2371453285
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: c0275620aaef172f7f4d9b699c35130b
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: b0363f7088f9761414f730641bf9a24b
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Resources/FUI/Runtime_atlas0!a.png
+- Assets/Resources/FUI/Hotfix_atlas0!a.png
+- Assets/Resources/FUI/Runtime_atlas0.png
+- Assets/Resources/FUI/Hotfix_atlas0.png
+Dependencies: []

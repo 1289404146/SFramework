@@ -1292,7 +1292,7 @@ GameObject:
   - component: {fileID: 8345689935115655832}
   - component: {fileID: 3920788401754218271}
   - component: {fileID: 5432166857652434647}
-  - component: {fileID: 1914954775390408082}
+  - component: {fileID: 5220950042510834453}
   m_Layer: 5
   m_Name: UIFriends
   m_TagString: Untagged
@@ -1363,7 +1363,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &1914954775390408082
+--- !u!114 &5220950042510834453
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1372,11 +1372,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 5455323870827765917}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1f05e88a9f274694db8c51fa643316e9, type: 3}
+  m_Script: {fileID: 11500000, guid: 410f4d8926facba499c05706609b3642, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  uiLayer: 1
-  uiType: UILogin
 --- !u!1 &5812285468702882610
 GameObject:
   m_ObjectHideFlags: 0
