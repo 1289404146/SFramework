@@ -143,7 +143,7 @@ public class Main : MonoBehaviour
         Main.RequestManager.AddRequest(ActionCode.TestFun, new TestRequest(RequestCode.Test, ActionCode.TestFun, (data) =>
           {
               Debug.Log(data);
-              IMessage message = new OnePerson();
+              Google.Protobuf.IMessage message = new OnePerson();
               OnePerson mySelf = new OnePerson();
               mySelf = (OnePerson)message.Descriptor.Parser.ParseFrom(data);
               //打印输出
@@ -166,7 +166,7 @@ public class Main : MonoBehaviour
 
         //...
         //将字节数组转换为OnePerson对象
-        IMessage message = new OnePerson();
+        Google.Protobuf.IMessage message = new OnePerson();
         OnePerson mySelf = new OnePerson();
         mySelf = (OnePerson)message.Descriptor.Parser.ParseFrom(dataByte);
         //打印输出
