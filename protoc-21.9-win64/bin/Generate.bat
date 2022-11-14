@@ -5,5 +5,5 @@
 
 
 
-start cmd /k "cd/d E:\Demo\SimpleFM\protoc-21.9-win64\bin && protoc.exe --proto_path=./ GameProtobuf.proto --csharp_out=../../Client\Project\Assets\Gen\Message && exit
+start cmd /k "cd/d E:\Demo\SimpleFM\protoc-21.9-win64\bin && protoc.exe --proto_path=./ GameProtobuf.proto --csharp_out=../../Client\Project\Assets\Message && exit
 

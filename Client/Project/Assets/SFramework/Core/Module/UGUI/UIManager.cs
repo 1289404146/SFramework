@@ -41,13 +41,14 @@ public class UIManager : BaseMono,IManager
         dicPath[UIType.UIRanking] = "UIPanel/UIRanking";
         dicPath[UIType.UIBag] = "UIPanel/UIBag";
         dicPath[UIType.UITask] = "UIPanel/UITask";
-        dicPath[UIType.UIUnion] = "UIPanel/UIUnion";
+        dicPath[UIType.UIMail] = "UIPanel/UIMail";
         dicPath[UIType.UIFriends] = "UIPanel/UIFriends";
         dicPath[UIType.UISelectLevel] = "UIPanel/UISelectLevel";
         dicPath[UIType.UIGameStart] = "UIPanel/UIGameStart";
         dicPath[UIType.UIGameMain] = "UIPanel/UIGameMain";
         dicPath[UIType.UIGameEnd] = "UIPanel/UIGameEnd";
-}
+        dicPath[UIType.UISetting] = "UIPanel/UISetting";
+    }
 
     private void InitUILayer()
     {

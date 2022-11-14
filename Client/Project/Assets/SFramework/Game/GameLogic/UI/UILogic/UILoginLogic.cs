@@ -23,7 +23,8 @@ public class UILoginLogic : UIBaseLogic
         uiView.login.onClick.AddListener(LoginClick);
         uiView.quit.onClick.AddListener(QuitClick);
         uiView.regist.onClick.AddListener(RegistClick);
-
+        uiView.acount.text = "666";
+        uiView.password.text = "666";
     }
     public void Start()
     {

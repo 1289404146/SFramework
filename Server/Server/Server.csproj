@@ -8,6 +8,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="NLog" Version="5.0.5" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Reference Include="Google.Protobuf">
       <HintPath>C:\Program Files (x86)\MySQL\Connector NET 8.0\Assemblies\net5.0\Google.Protobuf.dll</HintPath>
     </Reference>

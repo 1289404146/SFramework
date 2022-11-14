@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "4SCC2CLeKkvP/TvmjS6lc7/rBVazudsXpxfGurax/6yce1rv9TQRg7tk8QwUC0UdASPvV+gQA+Kpdwq3OmMy+g==",
+  "dgSpecHash": "feqwMwN626XqOQ5B3Lu15MEWNHK7ThhIvOpspVmAn8nrlZoIpZx63w6Gom+7rkIqR/6RbdLEFd2j7OQrIa1CNQ==",
   "success": true,
   "projectFilePath": "E:\\Demo\\SimpleFM\\Server\\Server\\Server.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Administrator\\.nuget\\packages\\nlog\\5.0.5\\nlog.5.0.5.nupkg.sha512"
+  ],
   "logs": []
 }

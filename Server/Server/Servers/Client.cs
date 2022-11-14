@@ -81,7 +81,7 @@ using GameServer.Tool;
                 {
                     Close();
                 }
-                msg.ReadMessageFromProtol(count, OnProcessMessageFromProtol);
+                msg.ReadMessage(count, OnProcessMessage);
                 Start();
             }
             catch (Exception e)

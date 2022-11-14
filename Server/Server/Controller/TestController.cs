@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-
+[ControllerAttribute(RequestCode.Test)]
 internal class TestController : BaseController
 {
     public TestController()

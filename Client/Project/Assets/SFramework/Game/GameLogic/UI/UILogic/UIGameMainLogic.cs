@@ -26,9 +26,27 @@ public class UIGameMainLogic : UIBaseLogic
         uiView.bagButton.onClick.AddListener(BagButton);
         uiView.friendButton.onClick.AddListener(FrientButton);
         uiView.recordButton.onClick.AddListener(RecordButton);
-
         uiView.chatToggle.onValueChanged.AddListener(ChatRootToggle);
+        uiView.SetButton.onClick.AddListener(SetButton);
+        uiView.mailButton.onClick.AddListener(MailButton);
+        uiView.taskButton.onClick.AddListener(TaskButton);
         ChatRootToggle(uiView.chatToggle.isOn);
+    }
+
+    private void TaskButton()
+    {
+        Main.UIManager.OpenPanel<UITaskLogic>(UIType.UITask);
+    }
+
+    private void MailButton()
+    {
+        Debug.Log("UIMail");
+        Main.UIManager.OpenPanel<UIMailLogic>(UIType.UIMail);
+    }
+
+    private void SetButton()
+    {
+        Main.UIManager.OpenPanel<UISettingLogic>(UIType.UISetting);
     }
 
     private void RecordButton()

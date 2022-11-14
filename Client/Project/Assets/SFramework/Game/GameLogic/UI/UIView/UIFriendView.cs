@@ -8,10 +8,10 @@ using UnityEngine.UI;
 
 class UIFriendView : UIBaseView
 {
-  
+    public Button BackButton;
 
     public override void Init(Transform transform)
     {
-
+        BackButton = transform.Find("BackButton").GetComponent<Button>();
     }
 }

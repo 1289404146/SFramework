@@ -12,10 +12,17 @@ public class UIGameMainView : UIBaseView
     public Button createRoomButton;
     public Button backButton;
     public Button refreshButton;
+
     public Button bagButton;
     public Button recordButton;
     public Button friendButton;
 
+    public Button mailButton;
+    public Button taskButton;
+    public Button SetButton;
+
+
+    public Button PlayerInfoButton;
 
     public Text nameText;
     public Text winText;
@@ -33,17 +40,22 @@ public class UIGameMainView : UIBaseView
     {
         chatToggle = transform.Find("ChatToggle").GetComponent<Toggle>();
         chatRoot = transform.Find("ChatRoot").gameObject;
-        nameText = transform.Find("Text").GetComponent<Text>();
-        winText = transform.Find("Text1").GetComponent<Text>();
-        totolText = transform.Find("Text2").GetComponent<Text>();
-        scrollRect = transform.Find("ScrollView").GetComponent<ScrollRect>();
-        Content = transform.Find("ScrollView/Viewport/Content").gameObject;
-        layout = transform.Find("ScrollView/Viewport/Content").GetComponent<VerticalLayoutGroup>();
+        PlayerInfoButton = transform.Find("PlayerInfo").GetComponent<Button>();
+        nameText = transform.Find("PlayerInfo/Text").GetComponent<Text>();
+        winText = transform.Find("PlayerInfo/Text1").GetComponent<Text>();
+        totolText = transform.Find("PlayerInfo/Text2").GetComponent<Text>();
+
+        scrollRect = transform.Find("Room/ScrollView").GetComponent<ScrollRect>();
+        Content = transform.Find("Room/ScrollView/Viewport/Content").gameObject;
+        layout = transform.Find("Room/ScrollView/Viewport/Content").GetComponent<VerticalLayoutGroup>();
         backButton = transform.Find("BackButton").GetComponent<Button>();
-        createRoomButton = transform.Find("CreateRoomButton").GetComponent<Button>();
-        refreshButton = transform.Find("RefreshButton").GetComponent<Button>();
+        createRoomButton = transform.Find("Room/CreateRoomButton").GetComponent<Button>();
+        refreshButton = transform.Find("Room/RefreshButton").GetComponent<Button>();
         bagButton = transform.Find("Down/BagButton").GetComponent<Button>();
         recordButton = transform.Find("Down/RecordButton").GetComponent<Button>();
         friendButton = transform.Find("Down/FriendButton").GetComponent<Button>();
+        mailButton = transform.Find("Down/MailButton").GetComponent<Button>();
+        taskButton = transform.Find("Down/TaskButton").GetComponent<Button>();
+        SetButton = transform.Find("Down/SetButton").GetComponent<Button>();
     }
 }

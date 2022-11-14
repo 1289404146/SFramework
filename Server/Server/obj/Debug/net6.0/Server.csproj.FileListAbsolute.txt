@@ -26,3 +26,4 @@ E:\Demo\SimpleFM\Server\Server\bin\Debug\net6.0\K4os.Compression.LZ4.dll
 E:\Demo\SimpleFM\Server\Server\bin\Debug\net6.0\K4os.Hash.xxHash.dll
 E:\Demo\SimpleFM\Server\Server\bin\Debug\net6.0\System.Windows.Extensions.dll
 E:\Demo\SimpleFM\Server\Server\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+E:\Demo\SimpleFM\Server\Server\bin\Debug\net6.0\NLog.dll

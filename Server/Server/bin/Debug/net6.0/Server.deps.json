@@ -8,11 +8,20 @@
     ".NETCoreApp,Version=v6.0": {
       "Server/1.0.0": {
         "dependencies": {
+          "NLog": "5.0.5",
           "Google.Protobuf": "3.19.4.0",
           "MySql.Data": "8.0.31.0"
         },
         "runtime": {
           "Server.dll": {}
+        }
+      },
+      "NLog/5.0.5": {
+        "runtime": {
+          "lib/netstandard2.0/NLog.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.5.1426"
+          }
         }
       },
       "Google.Protobuf/3.19.4.0": {
@@ -110,6 +119,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "NLog/5.0.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-NOTWSyUEljmjMq7OqZ1X9iu4bJ+rW/o6pt79Jq8j2Q7s8DyoMMCJwe0HoCKcNjhYRJ++b+E8erH6E6WwaCTshQ==",
+      "path": "nlog/5.0.5",
+      "hashPath": "nlog.5.0.5.nupkg.sha512"
     },
     "Google.Protobuf/3.19.4.0": {
       "type": "reference",

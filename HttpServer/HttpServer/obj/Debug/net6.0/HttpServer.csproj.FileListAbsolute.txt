@@ -1,0 +1,17 @@
+E:\Demo\SimpleFM\HttpServer\HttpServer\obj\Debug\net6.0\HttpServer.csproj.AssemblyReference.cache
+E:\Demo\SimpleFM\HttpServer\HttpServer\obj\Debug\net6.0\HttpServer.GeneratedMSBuildEditorConfig.editorconfig
+E:\Demo\SimpleFM\HttpServer\HttpServer\obj\Debug\net6.0\HttpServer.AssemblyInfoInputs.cache
+E:\Demo\SimpleFM\HttpServer\HttpServer\obj\Debug\net6.0\HttpServer.AssemblyInfo.cs
+E:\Demo\SimpleFM\HttpServer\HttpServer\obj\Debug\net6.0\HttpServer.csproj.CoreCompileInputs.cache
+E:\Demo\SimpleFM\HttpServer\HttpServer\bin\Debug\net6.0\HttpServer.exe
+E:\Demo\SimpleFM\HttpServer\HttpServer\bin\Debug\net6.0\HttpServer.deps.json
+E:\Demo\SimpleFM\HttpServer\HttpServer\bin\Debug\net6.0\HttpServer.runtimeconfig.json
+E:\Demo\SimpleFM\HttpServer\HttpServer\bin\Debug\net6.0\HttpServer.dll
+E:\Demo\SimpleFM\HttpServer\HttpServer\bin\Debug\net6.0\HttpServer.pdb
+E:\Demo\SimpleFM\HttpServer\HttpServer\obj\Debug\net6.0\HttpServer.dll
+E:\Demo\SimpleFM\HttpServer\HttpServer\obj\Debug\net6.0\refint\HttpServer.dll
+E:\Demo\SimpleFM\HttpServer\HttpServer\obj\Debug\net6.0\HttpServer.pdb
+E:\Demo\SimpleFM\HttpServer\HttpServer\obj\Debug\net6.0\HttpServer.genruntimeconfig.cache
+E:\Demo\SimpleFM\HttpServer\HttpServer\obj\Debug\net6.0\ref\HttpServer.dll
+E:\Demo\SimpleFM\HttpServer\HttpServer\bin\Debug\net6.0\Fleck.dll
+E:\Demo\SimpleFM\HttpServer\HttpServer\obj\Debug\net6.0\HttpServer.csproj.CopyComplete

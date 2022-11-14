@@ -16,11 +16,7 @@ MonoBehaviour:
   m_Data:
     m_SerializedData: []
   m_GUID: b86d5ed5b5c10aa4ca1b09a59c28b821
-  m_SerializeEntries:
-  - m_GUID: b4ee1a3af5b6f8949b81f031cfa325f4
-    m_Address: Assets/Resources/UIPanel/UIUnion.prefab
-    m_ReadOnly: 0
-    m_SerializedLabels: []
+  m_SerializeEntries: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 01742060e80c8b147ae907280d2e460b, type: 2}
   m_SchemaSet:
