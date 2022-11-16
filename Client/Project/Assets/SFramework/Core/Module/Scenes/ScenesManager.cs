@@ -39,6 +39,7 @@ public class ScenesManager : BaseMono,IManager
                 Main.Instance.AddComponentToMain<Empty>().Initilize();
                 break;
             case SceneType.Game1:
+                Main.Instance.AddComponentToMain<Game>().Initilize();
                 break;
             case SceneType.Game2:
                 break;

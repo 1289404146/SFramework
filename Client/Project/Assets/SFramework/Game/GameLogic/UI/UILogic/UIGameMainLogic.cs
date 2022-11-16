@@ -30,7 +30,13 @@ public class UIGameMainLogic : UIBaseLogic
         uiView.SetButton.onClick.AddListener(SetButton);
         uiView.mailButton.onClick.AddListener(MailButton);
         uiView.taskButton.onClick.AddListener(TaskButton);
+        uiView.PlayerInfoButton.onClick.AddListener(PalyerInfoButton);
         ChatRootToggle(uiView.chatToggle.isOn);
+    }
+    private void PalyerInfoButton()
+    {
+        Main.Instance.AddComponentToMain<Empty>().DeInitilize();
+        Main.ScenesManager.LoadScene(SceneType.Game1);
     }
 
     private void TaskButton()
@@ -99,6 +105,12 @@ public class UIGameMainLogic : UIBaseLogic
         uiView.totolText.text = value;
     }
     public RoleType RoleType;
+    public override void DeInit()
+    {
+        Main.RequestManager.RemoveRequest(ActionCode.CreateRoom);
+        Main.RequestManager.RemoveRequest(ActionCode.ListRoom);
+        Main.RequestManager.RemoveRequest(ActionCode.JoinRoom);
+    }
     public  void Start()
     {
         gameObject.SetActive(true);

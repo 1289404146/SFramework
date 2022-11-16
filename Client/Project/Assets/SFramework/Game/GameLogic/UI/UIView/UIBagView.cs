@@ -1,4 +1,5 @@
-﻿using System;
+﻿using cfg.demo;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -27,9 +28,16 @@ class UIBagView : UIBaseView
         for (int i = 0; i < 100; i++)
         {
             GameObject game = GameObject.Instantiate(pre, content.transform);
+            HeroComponent com =game.AddComponent<HeroComponent>();
             game.GetComponent<Toggle>().group = toggleGroup;
             game.SetActive(true);
             game.name = "Toggle" + i;
+            Dictionary<int, Hero> collection = TableManager.Tables.TbHero.DataMap;
+            com.text.text = collection[1].Name;
+            foreach (var item in collection)
+            {
+                Debug.Log(item.Key+item.Value.Name);
+            }
             game.GetComponent<Toggle>().interactable = true;
         }
     }

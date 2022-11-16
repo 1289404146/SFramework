@@ -128,7 +128,7 @@ public class Main : MonoBehaviour
         //GameManager.SwitchGameState(GameState.gameing);
         //GameManager.SwitchGameState(GameState.end);
         //GameManager.SwitchGameState(GameState.DeInit);
-        Main.ScenesManager.LoadScene(SceneType.Empty);
+        Main.UIManager.OpenPanel<UILoginLogic>(UIType.UILogin);
         AttackRequest attackRequest = new AttackRequest(RequestCode.Game, ActionCode.Attack, (data) =>
             {
                 Debug.Log(data);

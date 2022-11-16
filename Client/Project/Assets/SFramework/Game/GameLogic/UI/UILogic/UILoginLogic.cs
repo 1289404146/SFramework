@@ -37,15 +37,14 @@ public class UILoginLogic : UIBaseLogic
                 string username = strs[1];
                 int totalCount = int.Parse(strs[2]);
                 int winCount = int.Parse(strs[3]);
-                UserData userData= new UserData(username, totalCount,winCount);
+
+                //Main.ScenesManager.LoadScene(SceneType.Empty);
+                UserData userData = new UserData(username, totalCount, winCount);
                 Main.GameManager.UserData = userData;
                 Debug.Log(data);
-                Main.UIManager.ClosePanel<UILoginLogic>(UIType.UILogin);
-                Main.UIManager.OpenPanel<UIGameMainLogic>(UIType.UIGameMain);
-                Main.UIManager.GetPanel<UIGameMainLogic>(UIType.UIGameMain).SetName(Main.GameManager.UserData.Username);
-                Main.UIManager.GetPanel<UIGameMainLogic>(UIType.UIGameMain).SetWin(Main.GameManager.UserData.WinCount.ToString());
-                Main.UIManager.GetPanel<UIGameMainLogic>(UIType.UIGameMain).SetTotol(Main.GameManager.UserData.TotalCount.ToString());
 
+                Main.UIManager.ClosePanel<UILoginLogic>(UIType.UILogin);
+                Main.ScenesManager.LoadScene(SceneType.Empty);
 
                 //UserData ud = new UserData(username, totalCount, winCount);
                 //facade.SetUserData(ud);
@@ -56,6 +55,11 @@ public class UILoginLogic : UIBaseLogic
                 Debug.Log("Œ¥’“µΩ");
             }
         }));
+    }
+    public override void DeInit()
+    {
+        base.DeInit();
+        Main.RequestManager.RemoveRequest(ActionCode.Login);
     }
     private void RegistClick()
     {

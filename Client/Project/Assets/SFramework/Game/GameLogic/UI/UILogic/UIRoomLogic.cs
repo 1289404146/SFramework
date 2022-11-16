@@ -32,7 +32,14 @@ public class UIRoomLogic : UIBaseLogic
     {
           Main.ClientManager.SendRequest(RequestCode.Game,ActionCode.StartGame,"r");
     }
-
+    public override void DeInit()
+    {
+        base.DeInit();
+        Main.RequestManager.RemoveRequest(ActionCode.StartGame);
+        Main.RequestManager.RemoveRequest(ActionCode.StartPlay);
+        Main.RequestManager.RemoveRequest(ActionCode.QuitRoom);
+        Main.RequestManager.RemoveRequest(ActionCode.UpdateRoom);
+    }
     public  void Start()
     {
         gameObject.SetActive(true);

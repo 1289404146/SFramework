@@ -7,24 +7,20 @@ using cfg;
 using UnityEngine;
 using SimpleJSON;
 
-namespace GameLogic
+public class TableManager
 {
-    public class TableManager
+    private static Tables m_Tables;
+    public static Tables Tables
     {
-        private static Tables m_Tables;
-        public static Tables Tables
+        get
         {
-            get
-            {
-                if(m_Tables == null)
-                    m_Tables = new cfg.Tables(LoadByteBuf);
-                return m_Tables;
-            }
+            if (m_Tables == null)
+                m_Tables = new cfg.Tables(LoadByteBuf);
+            return m_Tables;
         }
-
-        private static JSONNode LoadByteBuf(string file)
-        {
-            return JSON.Parse(File.ReadAllText(Application.dataPath + "/Gen/Json/" + file + ".json", System.Text.Encoding.UTF8));
-        }
+    }
+    private static JSONNode LoadByteBuf(string file)
+    {
+        return JSON.Parse(File.ReadAllText(Application.dataPath + "/Gen/Json/" + file + ".json", System.Text.Encoding.UTF8));
     }
 }

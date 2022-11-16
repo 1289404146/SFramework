@@ -35,6 +35,11 @@ public class RequestManager : BaseMono, IManager
             requestDict.Remove(actionCode);
         }
     }
+    public void RemoveAllRequest()
+    {
+        requestDict.Clear();
+        requestDict = null;
+    }
     public void HandleReponse(ActionCode actionCode, string data)
     {
         BaseRequest request = requestDict.TryGet<ActionCode, BaseRequest>(actionCode);

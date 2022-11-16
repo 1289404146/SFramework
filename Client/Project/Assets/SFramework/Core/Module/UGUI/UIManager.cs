@@ -105,7 +105,7 @@ public class UIManager : BaseMono,IManager
         GameObject goPanel = GameObject.Instantiate(go, canvasTf, false);
         UIBaseLogic panel = goPanel.GetComponent<UIBaseLogic>();
         goPanel.transform.SetParent(Main.UIManager.dicLayer[panel.uiLayer]);
-
+        panel.OnInit();
         dicPanel.Add(panelName, panel);
         return panel as T;
     }
@@ -130,6 +130,7 @@ public class UIManager : BaseMono,IManager
     {
         if (dicPanel.ContainsKey(panelName))
         {
+            dicPanel[panelName].DeInit();
             //销毁场景中的游戏对象
             Destroy(dicPanel[panelName].gameObject);
             //销毁内存中的引用

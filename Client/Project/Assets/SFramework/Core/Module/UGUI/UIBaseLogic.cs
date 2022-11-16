@@ -6,5 +6,13 @@ public abstract class UIBaseLogic :BaseMono
     public UILayer uiLayer;
     //UIÀàÐÍ×Ö¶Î
     public string uiType;
+    public virtual void OnInit()
+    {
+        
+    }
+    public virtual void DeInit()
+    {
+
+    }
 
 }

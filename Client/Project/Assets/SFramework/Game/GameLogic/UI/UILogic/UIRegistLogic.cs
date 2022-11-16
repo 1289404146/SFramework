@@ -67,4 +67,9 @@ public class UIRegistLogic : UIBaseLogic
               }
           }));
     }
+    public override void DeInit()
+    {
+        base.DeInit();
+        Main.RequestManager.RemoveRequest(ActionCode.Register);
+    }
 }
