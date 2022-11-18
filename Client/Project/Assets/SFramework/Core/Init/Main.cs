@@ -143,14 +143,14 @@ public class Main : MonoBehaviour
         Main.RequestManager.AddRequest(ActionCode.TestFun, new TestRequest(RequestCode.Test, ActionCode.TestFun, (data) =>
           {
               Debug.Log(data);
-              Google.Protobuf.IMessage message = new OnePerson();
-              OnePerson mySelf = new OnePerson();
-              mySelf = (OnePerson)message.Descriptor.Parser.ParseFrom(data);
+              Google.Protobuf.IMessage ma = new OnePerson();
+              OnePerson my = new OnePerson();
+              my = (OnePerson)ma.Descriptor.Parser.ParseFrom(data);
               //´òÓ¡Êä³ö
-              Debug.Log($"My name is:{mySelf.Name}");
-              Debug.Log($"My idNumber is:{mySelf.IdNumber}");
-              Debug.Log($"My gender is:{mySelf.Gender}");
-              Debug.Log($"My profession is:{mySelf.Profession}");
+              Debug.Log($"My name is:{my.Name}");
+              Debug.Log($"My idNumber is:{my.IdNumber}");
+              Debug.Log($"My gender is:{my.Gender}");
+              Debug.Log($"My profession is:{my.Profession}");
               //if ((ReturnCode)data == ReturnCode.Success)
               //{ }
           }));
