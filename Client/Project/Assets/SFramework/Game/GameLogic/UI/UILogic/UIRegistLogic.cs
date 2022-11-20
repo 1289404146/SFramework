@@ -28,14 +28,20 @@ public class UIRegistLogic : UIBaseLogic
         if (string.IsNullOrEmpty(view.acount.text))
         {
             msg += "用户名不能为空 ";
+            MessageHelper.TopMessage(msg);
+
         }
         if (string.IsNullOrEmpty(view.password.text))
         {
             msg += "密码不能为空 ";
+            MessageHelper.TopMessage(msg);
+
         }
         if (msg != "")
         {
             Debug.Log(msg);
+            MessageHelper.TopMessage(msg);
+
             return;
         }
 

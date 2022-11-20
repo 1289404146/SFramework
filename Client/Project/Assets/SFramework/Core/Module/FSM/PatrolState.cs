@@ -43,7 +43,8 @@ public class PatrolState : FSMState
 
     public override void Reason(GameObject npc)
     {
-        npc.GetComponent<Animator>().SetFloat("Speed", moveSpeed);
+        //npc.GetComponent<Animator>().SetFloat("Speed", moveSpeed);
+        npc.GetComponent<Animator>().SetInteger("Anim", (int)Anim.Idel);
         if (Vector3.Distance(player.position, npc.transform.position) < 10)
         {
             fSM.PerformTransition(Transition.SeePlayer);

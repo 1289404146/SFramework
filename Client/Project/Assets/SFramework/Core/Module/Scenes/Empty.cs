@@ -11,6 +11,8 @@ class Empty : BaseMono, IScene
     {
         Debug.Log("Empty_____DeInitilize");
         Main.UIManager.ClosePanel<UIGameMainLogic>(UIType.UIGameMain);
+        Main.UIManager.ClosePanel<UIRoomLogic>(UIType.UIRoom);
+
     }
 
     public void Initilize()

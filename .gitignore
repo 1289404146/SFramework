@@ -16,3 +16,5 @@ Client/Project/Library/
 Client/Project/Logs/Packages-Update.log
 *.log
 Client/Project/obj/
+Client/Project/Temp/
+Client/Project/Build/

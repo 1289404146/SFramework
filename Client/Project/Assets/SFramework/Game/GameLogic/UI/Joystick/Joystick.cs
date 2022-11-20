@@ -18,6 +18,7 @@ public class Joystick : MonoBehaviour
     public Action OnTouchDown;
 
     public Action<JoystickData> OnTouchMove;
+    public Action<float, float> OnTouchRotate;
 
     public Action OnTouchUp;
 
@@ -25,7 +26,7 @@ public class Joystick : MonoBehaviour
 
     public GameObject joystick;//移动对象
 
-    public float joystickRadius = 200.0f;//移动半径（UGUI像素）
+    public float joystickRadius = 150.0f;//移动半径（UGUI像素）
 
     public Rect touchArea = new Rect(0, 0, 1f, 1f);//0~1
 
@@ -64,6 +65,7 @@ public class Joystick : MonoBehaviour
         self = transform;
 
         selfDefaultPosition = self.position;
+
 
         //获取转换系数
 
@@ -110,9 +112,9 @@ public class Joystick : MonoBehaviour
     // Update is called once per frame
 
     void Update()
-
     {
-
+        horizontal = joystick.transform.localPosition.x;
+        vertical = joystick.transform.localPosition.y;
         if (!m_enabled)
 
             return;
@@ -124,7 +126,6 @@ public class Joystick : MonoBehaviour
         {
 
             TouchDown();
-
         }
 
         //拖动
@@ -144,7 +145,7 @@ public class Joystick : MonoBehaviour
         {
 
             TouchUp();
-
+            JoystickManager.Ins.animator.SetInteger("PlayerAnim", (int)PlayerAnim.Idle);
         }
 
     }
@@ -154,12 +155,14 @@ public class Joystick : MonoBehaviour
     {
 
         Vector3 touchPosition = Input.mousePosition;
-
+        if (touchPosition.x > 400 || touchPosition.y > 400)
+            return;
         Vector2 touchScreen = new Vector2(
 
             touchPosition.x / Screen.width, touchPosition.y / Screen.height);
 
         isOnArea = touchArea.Contains(touchScreen);
+        JoystickManager.Ins.animator.SetInteger("PlayerAnim", (int)PlayerAnim.Wolk);
 
         if (!isOnArea)
 
@@ -206,7 +209,14 @@ public class Joystick : MonoBehaviour
         if (distance < 0.01f)
 
             return;
-
+        if (distance > 100)
+        {
+            JoystickManager.Ins.animator.SetInteger("PlayerAnim", (int)PlayerAnim.Run);
+        }
+        else
+        {
+            JoystickManager.Ins.animator.SetInteger("PlayerAnim", (int)PlayerAnim.Wolk);
+        }
         isDragged = true;
 
         Vector3 direction = now - origin;
@@ -253,6 +263,10 @@ public class Joystick : MonoBehaviour
 
             OnTouchMove(data);
 
+        }
+        if (OnTouchRotate != null)
+        {
+            OnTouchRotate(horizontal, vertical);
         }
 
     }
@@ -364,5 +378,6 @@ public class Joystick : MonoBehaviour
         }
 
     }
-
+    public float horizontal { get; private set; }
+    public float vertical { get; private set; }
 }

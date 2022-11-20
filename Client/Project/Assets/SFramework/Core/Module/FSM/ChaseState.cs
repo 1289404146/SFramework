@@ -29,12 +29,13 @@ public class ChaseState : FSMState
 
     public override void Reason(GameObject npc)
     {
-        npc.GetComponent<Animator>().SetFloat("Speed", moveSpeed / 2);
+        //npc.GetComponent<Animator>().SetFloat("Speed", moveSpeed / 2);
+        npc.GetComponent<Animator>().SetInteger("Anim", (int)Anim.Run);
         if (Vector3.Distance(player.position, npc.transform.position) >= 10)
         {
             fSM.PerformTransition(Transition.LostPlayer);
         }
-        else if (Vector3.Distance(player.position, npc.transform.position) <= 1f)
+        else if (Vector3.Distance(player.position, npc.transform.position) <= 0.3F)
         {
             fSM.PerformTransition(Transition.AttackPlayer);
         }

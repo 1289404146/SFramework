@@ -21,6 +21,8 @@ public class UIGameMainLogic : UIBaseLogic
         uiView = new UIGameMainView();
         uiView.Init(transform);
         uiView.backButton.onClick.AddListener(BackButtonClick);
+        uiView.activeButton.onClick.AddListener(ActiveButton);
+        uiView.StartButton.onClick.AddListener(OpenRoom);
         uiView.createRoomButton.onClick.AddListener(CreateRoomButton);
         uiView.refreshButton.onClick.AddListener(ReFreshButton);
         uiView.bagButton.onClick.AddListener(BagButton);
@@ -33,10 +35,21 @@ public class UIGameMainLogic : UIBaseLogic
         uiView.PlayerInfoButton.onClick.AddListener(PalyerInfoButton);
         ChatRootToggle(uiView.chatToggle.isOn);
     }
+
+    private void ActiveButton()
+    {
+        MessageHelper.TopMessage("敬请期待");
+    }
+
+    private void OpenRoom()
+    {
+        Main.ClientManager.SendRequest(RequestCode.Room, ActionCode.ListRoom, "r");
+        uiView.Room.SetActive(true);
+    }
+
     private void PalyerInfoButton()
     {
-        Main.Instance.AddComponentToMain<Empty>().DeInitilize();
-        Main.ScenesManager.LoadScene(SceneType.Game1);
+
     }
 
     private void TaskButton()
@@ -144,6 +157,8 @@ public class UIGameMainLogic : UIBaseLogic
                 //Main.UIManager.ClosePanel<UIGameMainLogic>(UIType.UIGameMain);
                 //Main.UIManager.PopPanel();
                 RoleData roleData = new RoleData() { RoleType = roleType,userdata=Main.GameManager.UserData };
+                RoleType =Main.GameManager.RoleType;
+
                 Main.UIManager.OpenPanel<UIRoomLogic>(UIType.UIRoom);
                 Main.UIManager.GetPanel<UIRoomLogic>(UIType.UIRoom).SetContent(roleData);
             }
@@ -169,9 +184,11 @@ public class UIGameMainLogic : UIBaseLogic
                 {
                     case ReturnCode.NotFound:
                         Debug.Log("房间被销毁无法加入");
+                        MessageHelper.TopMessage("房间被销毁无法加入");
                         break;
                     case ReturnCode.Fail:
                         Debug.Log("房间已满，无法加入");
+                        MessageHelper.TopMessage("房间已满，无法加入");
                         break;
                     case ReturnCode.Success:
                         //Main.UIManager.ClosePanel<UIGameMainLogic>(UIType.UIGameMain);
@@ -190,14 +207,14 @@ public class UIGameMainLogic : UIBaseLogic
                             {
                                 if (roleType == RoleType.Blue)
                                 {
-                                    RoleData roleData1 = new RoleData() { RoleType = roleType, userdata = userDatas[i] };
+                                    RoleData roleData1 = new RoleData() { RoleType = RoleType.Red, userdata = userDatas[i] };
                                     if(!royodic.ContainsKey(RoleType.Red))
                                         royodic.Add(RoleType.Red, roleData1);
                                 }
                                 else 
                                 {
-                                    RoleData roleData2 = new RoleData() { RoleType = roleType, userdata = userDatas[i] };
-                                    if (!royodic.ContainsKey(RoleType.Red))
+                                    RoleData roleData2 = new RoleData() { RoleType = RoleType.Blue, userdata = userDatas[i] };
+                                    if (!royodic.ContainsKey(RoleType.Blue))
                                         royodic.Add(RoleType.Blue, roleData2);
                                 }
                             }
@@ -217,7 +234,7 @@ public class UIGameMainLogic : UIBaseLogic
             //roomListPanel.OnJoinResponse(returnCode, ud1, ud2);
 
         }));
-        Main.ClientManager.SendRequest(RequestCode.Room, ActionCode.ListRoom, "r");
+        //Main.ClientManager.SendRequest(RequestCode.Room, ActionCode.ListRoom, "r");
     }
     public void ShowRoomList(List<UserData> udList)
     {
@@ -238,7 +255,7 @@ public class UIGameMainLogic : UIBaseLogic
             roomItem.SetActive(true);
             UserData ud = udList[i];
             roomItem.GetComponent<RoomItem>().SetRoomInfo(ud.Id, ud.Username, ud.TotalCount, ud.WinCount);
-        }
+        }                                                               
         int roomCount = GetComponentsInChildren<RoomItem>().Length;
         Vector2 size = uiView.Content.GetComponent<RectTransform>().sizeDelta;
         uiView.Content.GetComponent<RectTransform>().sizeDelta = new Vector2(size.x,
@@ -247,7 +264,8 @@ public class UIGameMainLogic : UIBaseLogic
     }
     private void BackButtonClick()
     {
-        Main.UIManager.ClosePanel<UIGameMainLogic>(UIType.UIGameMain);
-        Main.UIManager.OpenPanel<UILoginLogic>(UIType.UILogin);
+        //Main.UIManager.ClosePanel<UIGameMainLogic>(UIType.UIGameMain);
+        //Main.UIManager.OpenPanel<UILoginLogic>(UIType.UILogin);
+        uiView.Room.SetActive(false);
     }
 }

@@ -23,7 +23,7 @@ public class AttackState : FSMState
 
     public override void Reason(GameObject npc)
     {
-        if (Vector3.Distance(player.position, npc.transform.position) > 1f)
+        if (Vector3.Distance(player.position, npc.transform.position) > 0.3f)
         {
             if (Vector3.Distance(player.position, npc.transform.position) >= 10)
             {
@@ -35,6 +35,8 @@ public class AttackState : FSMState
             }
             return;
         }
-        npc.GetComponent<Animator>().SetTrigger("Attack01");
+        //npc.GetComponent<Animator>().SetTrigger("Attack01");
+        npc.GetComponent<Animator>().SetInteger("Anim",(int)Anim.Attack);
+
     }
 }

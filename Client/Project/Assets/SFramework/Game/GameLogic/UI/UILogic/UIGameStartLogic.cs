@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using UnityEngine;
 
 class UIGameStartLogic : UIBaseLogic
 {
@@ -23,7 +24,9 @@ class UIGameStartLogic : UIBaseLogic
     {
         uiView.BackButton.onClick.AddListener(CloseFriend);
     }
-
+    public void Update()
+    {
+    }
     private void CloseFriend()
     {
         Main.Instance.AddComponentToMain<Game>().DeInitilize();

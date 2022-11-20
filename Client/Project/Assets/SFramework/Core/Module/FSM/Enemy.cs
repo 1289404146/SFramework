@@ -2,12 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum Anim
+{
+    Idel=0,//×·Öð
+    Run,//Ñ²Âß
+    Attack,//¹¥»÷
+}
 public class Enemy : MonoBehaviour
 {
     private FSMSystem fSM;
     private Transform player;
     private void Start()
     {
+        player = GameObject.Find("Local").transform;
         fSM = new FSMSystem();
         FSMState patrolState = new PatrolState(fSM, player);
         patrolState.AddTransition(Transition.SeePlayer, StateID.Chase);

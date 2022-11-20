@@ -48,6 +48,7 @@ public class UIManager : BaseMono,IManager
         dicPath[UIType.UIGameMain] = "UIPanel/UIGameMain";
         dicPath[UIType.UIGameEnd] = "UIPanel/UIGameEnd";
         dicPath[UIType.UISetting] = "UIPanel/UISetting";
+        dicPath[UIType.UIMessage] = "UIPanel/UIMessage";
     }
 
     private void InitUILayer()

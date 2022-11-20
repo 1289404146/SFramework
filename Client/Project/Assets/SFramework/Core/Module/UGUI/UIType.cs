@@ -23,4 +23,6 @@ public class UIType
     public const string UIGameMain = "UIGameMain";
     public const string UIGameEnd = "UIGameEnd";
     public const string UISetting = "UISetting";
+    public const string UIMessage = "UIMessage";
+
 }

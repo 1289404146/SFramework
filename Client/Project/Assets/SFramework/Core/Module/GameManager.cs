@@ -11,6 +11,7 @@ public enum GameState
 }
 public class GameManager : BaseMono
 {
+    public RoleType RoleType;
     public UserData UserData;
     public GameState CurrentState;
     private void Awake()

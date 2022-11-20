@@ -61,6 +61,7 @@
     <Compile Include="Assets\FairyGUI\Scripts\Editor\StageCameraEditor.cs" />
     <Compile Include="Assets\Editor\BuildEditor.cs" />
     <Compile Include="Assets\Editor\Helper\EditorResHelper.cs" />
+    <Compile Include="Assets\Editor\ServerManager.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\Editor\UIContentScalerEditor.cs" />
     <Compile Include="Assets\Editor\GenerateProtol.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\Editor\PackagesWindow.cs" />
@@ -70,7 +71,7 @@
     <Compile Include="Assets\Editor\BuildHelper.cs" />
     <Compile Include="Assets\FairyGUI\Scripts\Editor\UIPainterEditor.cs" />
     <Compile Include="Assets\Editor\GenerateUICode.cs" />
-    <Compile Include="Assets\Editor\ServerManager.cs" />
+    <Compile Include="Assets\Res\Cartoon Heroes\Scripts\SetCharacter\Editor\SetCharacterEditor.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

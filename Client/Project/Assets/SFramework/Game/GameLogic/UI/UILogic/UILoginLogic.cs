@@ -52,7 +52,7 @@ public class UILoginLogic : UIBaseLogic
             else
             {
                 Debug.Log(data);
-                Debug.Log("未找到");
+                MessageHelper.TopMessage("未找到");
             }
         }));
     }
@@ -77,14 +77,18 @@ public class UILoginLogic : UIBaseLogic
         if (string.IsNullOrEmpty(uiView.acount.text))
         {
             msg += "用户名不能为空 ";
+            MessageHelper.TopMessage(msg);
         }
         if (string.IsNullOrEmpty(uiView.password.text))
         {
             msg += "密码不能为空 ";
+            MessageHelper.TopMessage(msg);
+
         }
         if (msg != "")
         {
             Debug.Log(msg);
+            MessageHelper.TopMessage(msg);
             return;
         }
 

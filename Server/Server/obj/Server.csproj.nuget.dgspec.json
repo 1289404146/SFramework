@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Demo\\SimpleFM\\Server\\Server\\Server.csproj": {}
+    "G:\\github\\SFramework\\Server\\Server\\Server.csproj": {}
   },
   "projects": {
-    "E:\\Demo\\SimpleFM\\Server\\Server\\Server.csproj": {
+    "G:\\github\\SFramework\\Server\\Server\\Server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Demo\\SimpleFM\\Server\\Server\\Server.csproj",
+        "projectUniqueName": "G:\\github\\SFramework\\Server\\Server\\Server.csproj",
         "projectName": "Server",
-        "projectPath": "E:\\Demo\\SimpleFM\\Server\\Server\\Server.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "E:\\Demo\\SimpleFM\\Server\\Server\\obj\\",
+        "projectPath": "G:\\github\\SFramework\\Server\\Server\\Server.csproj",
+        "packagesPath": "C:\\Users\\chen\\.nuget\\packages\\",
+        "outputPath": "G:\\github\\SFramework\\Server\\Server\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\chen\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -51,8 +51,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -61,7 +60,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }

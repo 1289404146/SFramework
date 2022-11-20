@@ -12,10 +12,15 @@ public class UIGameMainView : UIBaseView
     public Button createRoomButton;
     public Button backButton;
     public Button refreshButton;
+    public Button StartButton;
 
+    
     public Button bagButton;
     public Button recordButton;
     public Button friendButton;
+
+    public Button activeButton;
+
 
     public Button mailButton;
     public Button taskButton;
@@ -23,6 +28,7 @@ public class UIGameMainView : UIBaseView
 
 
     public Button PlayerInfoButton;
+    public GameObject Room;
 
     public Text nameText;
     public Text winText;
@@ -44,11 +50,16 @@ public class UIGameMainView : UIBaseView
         nameText = transform.Find("PlayerInfo/Text").GetComponent<Text>();
         winText = transform.Find("PlayerInfo/Text1").GetComponent<Text>();
         totolText = transform.Find("PlayerInfo/Text2").GetComponent<Text>();
+        Room = transform.Find("Room").gameObject;
 
+        StartButton = transform.Find("StartButton").GetComponent<Button>();
+        activeButton = transform.Find("Image/Image").GetComponent<Button>();
+
+        
         scrollRect = transform.Find("Room/ScrollView").GetComponent<ScrollRect>();
         Content = transform.Find("Room/ScrollView/Viewport/Content").gameObject;
         layout = transform.Find("Room/ScrollView/Viewport/Content").GetComponent<VerticalLayoutGroup>();
-        backButton = transform.Find("BackButton").GetComponent<Button>();
+        backButton = transform.Find("Room/BackRoomButton").GetComponent<Button>();
         createRoomButton = transform.Find("Room/CreateRoomButton").GetComponent<Button>();
         refreshButton = transform.Find("Room/RefreshButton").GetComponent<Button>();
         bagButton = transform.Find("Down/BagButton").GetComponent<Button>();

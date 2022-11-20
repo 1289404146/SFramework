@@ -1,6 +1,7 @@
 
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class UIRoomLogic : UIBaseLogic
@@ -25,12 +26,12 @@ public class UIRoomLogic : UIBaseLogic
 
     private void BackButton()
     {
-        Main.ClientManager.SendRequest(RequestCode.Room,ActionCode.QuitRoom,"r");
+        Main.ClientManager.SendRequest(RequestCode.Room, ActionCode.QuitRoom, "r");
     }
 
     private void StartButton()
     {
-          Main.ClientManager.SendRequest(RequestCode.Game,ActionCode.StartGame,"r");
+        Main.ClientManager.SendRequest(RequestCode.Game, ActionCode.StartGame, "r");
     }
     public override void DeInit()
     {
@@ -40,30 +41,34 @@ public class UIRoomLogic : UIBaseLogic
         Main.RequestManager.RemoveRequest(ActionCode.QuitRoom);
         Main.RequestManager.RemoveRequest(ActionCode.UpdateRoom);
     }
-    public  void Start()
+    public void Start()
     {
         gameObject.SetActive(true);
-        view.blueGo.SetActive(false);
-        view.redGo.SetActive(false);
+        //view.blueGo.SetActive(false);
+        //view.redGo.SetActive(false);
         Main.RequestManager.AddRequest(ActionCode.StartGame, new StartPlayRequest(RequestCode.Game, ActionCode.StartGame, (data) =>
           {
               ReturnCode returnCode = (ReturnCode)int.Parse(data);
               if (returnCode == ReturnCode.Fail)
               {
+                  MessageHelper.TopMessage("您不是房主，无法开始游戏！！");
+
                   Debug.Log("您不是房主，无法开始游戏！！");
               }
               else
               {
-                  Debug.Log("正在进入游戏！！");
+                  Main.Instance.AddComponentToMain<Empty>().DeInitilize();
+                  Main.ScenesManager.LoadScene(SceneType.Game1);
                   //facade.EnterPlayingSync();
               }
-              Debug.Log("StartGame");
 
           }));
         Main.RequestManager.AddRequest(ActionCode.StartPlay, new StartPlayRequest(RequestCode.Game, ActionCode.StartPlay, (data) =>
         {
             isStartPlaying = true;
             Debug.Log("StartPlay");
+            MessageHelper.TopMessage("StartPlay");
+
             //facade.StartPlaying();
         }));
         Main.RequestManager.AddRequest(ActionCode.QuitRoom, new QuitRoomRequest(RequestCode.Room, ActionCode.QuitRoom, (data =>
@@ -75,7 +80,7 @@ public class UIRoomLogic : UIBaseLogic
                    Main.UIManager.OpenPanel<UIGameMainLogic>(UIType.UIGameMain);
                }
            })));
-        Main.RequestManager.AddRequest(ActionCode.UpdateRoom, new UpdateRoomRequest(RequestCode.None, ActionCode.UpdateRoom, (data) =>
+        Main.RequestManager.AddRequest(ActionCode.UpdateRoom, new UpdateRoomRequest(RequestCode.Room, ActionCode.UpdateRoom, (data) =>
            {
                UserData ud1 = null;
                UserData ud2 = null;
@@ -95,45 +100,66 @@ public class UIRoomLogic : UIBaseLogic
                        list.Remove(list[j]);
                    }
                }
-               foreach (var item in roleDataDict)
+               List<RoleData> dd = null;
+               dd = roleDataDict.Values.ToList();
+               for (int i = 0; i < dd.Count; i++)
                {
-                   if (item.Value.RoleType == RoleType.Blue)
+                   if (dd[i].RoleType == RoleType.Blue)
                    {
-                       if(!roleDataDict.ContainsKey(RoleType.Red))
-                           roleDataDict.Add(RoleType.Red, new RoleData() { RoleType=RoleType.Red,userdata=list[0]});
+                       if (!roleDataDict.ContainsKey(RoleType.Red))
+                           roleDataDict.Add(RoleType.Red, new RoleData() { RoleType = RoleType.Red, userdata = list[0] });
                    }
-                   else 
+                   else
                    {
                        if (!roleDataDict.ContainsKey(RoleType.Blue))
                            roleDataDict.Add(RoleType.Blue, new RoleData() { RoleType = RoleType.Blue, userdata = list[0] });
                    }
-                   SetContent(item.Value);
+                   SetContent(dd[i]);
                }
            }));
     }
     public void SetContent(RoleData roleData)
     {
-    if (!roleDataDict.ContainsKey(roleData.RoleType))
+        if (!roleDataDict.ContainsKey(roleData.RoleType))
         {
-        roleDataDict.Add(roleData.RoleType, roleData);
+            roleDataDict.Add(roleData.RoleType, roleData);
         }
         foreach (var item in roleDataDict)
         {
             if (item.Value.RoleType == RoleType.Blue)
             {
                 view.blueGo.SetActive(true);
-                view.bluename.text = "蓝方";
-                view.blueacount.text = roleData.userdata.WinCount.ToString();
-                view.bluepassword.text = roleData.userdata.TotalCount.ToString();
-
+                view.bluename.text = item.Value.userdata.Username;
+                view.blueacount.text = item.Value.userdata.WinCount.ToString();
+                view.bluepassword.text = item.Value.userdata.TotalCount.ToString();
+                if (roleDataDict.Count < 2)
+                {
+                    SetRed();
+                }
             }
             else
             {
                 view.redGo.SetActive(true);
-                view.redname.text = "红方";
-                view.redacount.text = roleData.userdata.WinCount.ToString();
-                view.redpassword.text = roleData.userdata.TotalCount.ToString();
+                view.redname.text = item.Value.userdata.Username;
+                view.redacount.text = item.Value.userdata.WinCount.ToString();
+                view.redpassword.text = item.Value.userdata.TotalCount.ToString();
+                if (roleDataDict.Count < 2)
+                {
+                    SetBlue();
+                }
             }
         }
+    }
+    public void SetRed()
+    {
+        view.redname.text = "等待加入";
+        view.redacount.text = "等待加入";
+        view.redpassword.text = "等待加入";
+    }
+    public void SetBlue()
+    {
+        view.bluename.text = "等待加入";
+        view.blueacount.text = "等待加入";
+        view.bluepassword.text = "等待加入";
     }
 }
